@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Dicas de Reciclagem</title>
+</head>
+
+<body>
+    <div id="divForm">
+        <h1>Dicas de Reciclagem</h1>
+        <form id="dicaForm">
+            <label for="dicaInput">Dica:</label>
+            <textarea id="dicaInput" required></textarea>
+
+            <select id="materialInput" class="selector">
+                <option value="" selected="selected">Escolha um Material</option>
+                <option value="metal">Metal</option>
+                <option value="plastico">Plastico</option>
+                <option value="papel">Papel</option>
+                <option value="vidro">Vidro</option>
+                <option value="organico">Orgânico</option>
+            </select>
+            <br>
+            <div id="buttonDiv1">
+                <button type="submit">Adicionar Dica</button>
+                <button type="reset">Limpar</button>
+                <button type="button" onclick="mostrarTabela()">Ver os horários de coleta seletiva</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div id="divList">
+        <input type="text" id="searchInput" placeholder="Digite o material">
+        <ul id="dicasList">
+            <li><button class="deleteButton">Excluir</button></li>
+        </ul>
+    </div>
+
+    <div id="divTab">
+        <h2>Coleta Seletiva</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Bairros</th>
+                    <th>Dias da Semana</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Ayrton Senna</td>
+                    <td>Segunda-feira, Quarta-feira e Quinta-feira</td>
+                    <td rowspan="5">A partir das 7:00h</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Vila Mariana</td>
+                    <td>Segunda-feira, Quarta-feira e Quinta-feira</td>
+
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Panorama</td>
+                    <td>Terça-feira, Quinta-feira e Sábado</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Cristo Rei</td>
+                    <td>Terça-feira, Quinta-feira e Sábado</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Parque Industrial</td>
+                    <td>Terça-feira e Sexta-feira</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="logout" onclick="mostrarPrincipal()">Voltar</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
+
+
