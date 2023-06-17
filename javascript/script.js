@@ -2,7 +2,7 @@
 exibirDicas();
 
 //////////////////////////////////////////////////////////////////////
-// Evento de envio do formulário
+// Pesquisas e adição de dicas
 document
   .getElementById("dicaForm")
   .addEventListener("submit", function (event) {
@@ -89,6 +89,7 @@ function exibirDicas() {
     deleteButton.addEventListener("click", function () {
       excluirDica(dica);
     });
+    deleteButton.className = "close";
     listItem.appendChild(deleteButton);
   });
 }
