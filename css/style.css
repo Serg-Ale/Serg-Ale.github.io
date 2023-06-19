@@ -6,9 +6,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    padding: 20px;
+    background-color: #272727;
+}
 
+header h1 {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
 
-/* ------- css divs ------- */
+#conteudo {
+    display: flex;
+}
+
+#menu {
+    margin: 0;
+    width: 300px;
+    height: 900px;
+    border: 0;
+    background-color: #d0d0d0;
+}
+
+#areaPrincipal {
+
+    width: 100%;
+    flex-direction: column;
+}
+
 .divConteudo {
     height: 400px;
     width: 2000px;
@@ -23,6 +49,12 @@ body {
 #divList {
     margin: 30px auto;
     display: table;
+    text-align: center;
+}
+
+#searchInput {
+    margin: 30px;
+    width: 550px;
 }
 
 #divTab {
@@ -57,23 +89,8 @@ textarea {
     margin-bottom: 10px;
 }
 
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
 
-button[type="reset"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button[type="button"] {
+.btnForm {
     background-color: #4CAF50;
     color: white;
     padding: 10px 10px;
@@ -107,10 +124,7 @@ button[type="button"]:hover {
     background-color: #45a049;
 }
 
-#searchInput {
-    margin: 0px 20px;
-    width: 550px;
-}
+
 
 h2 {
     text-align: center;
@@ -130,7 +144,7 @@ th {
     padding: 8px;
 }
 
-ul {
+#dicasList {
     width: 560px;
     list-style: none;
     padding: 0px;
@@ -152,37 +166,6 @@ li {
     background-color: #f44336;
     color: white;
 }
-
-header {
-    padding: 20px;
-    background-color: #272727;
-}
-
-header h1 {
-    color: white;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-
-#conteudo {
-    display: flex;
-}
-
-#menu {
-    margin: 0;
-    width: 300px;
-    height: 900px;
-    border: 0;
-    background-color: #d0d0d0;
-}
-
-#areaPrincipal {
-
-    width: 100%;
-    flex-direction: column;
-}
-
 
 footer {
     border: 0;
