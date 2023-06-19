@@ -10,8 +10,8 @@ body {
 
 /* ------- css divs ------- */
 .divConteudo {
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 2000px;
     border: 2px solid rgb(166, 166, 166);
     margin: 20px auto;
     border-radius: 10px;
