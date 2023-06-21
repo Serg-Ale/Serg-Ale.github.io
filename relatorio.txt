@@ -1,3 +1,5 @@
 A maioria do código gerado para a execução do projeto foi desenvolvida utlizando a técnica de códificação em pares.
 
-Ressalva para algumas funções e partes do css que foram desenvolvidas em paralelo (Marian Js e Sérgio CSS), porém a maioria foi desenvolvida da forma citada acima!
+Ressalva para algumas funções e partes do css que foram desenvolvidas em paralelo (Mariana Js e Sérgio CSS), porém a maioria foi desenvolvida da forma citada acima!
+
+Encontramos mais dificuldade com relação ao conceito de webStorage, porém estes foram superados durante a execução do projeto.
