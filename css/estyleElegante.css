@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background-color: #ff8c00;
+  display: flex;
+}
+
+.headerImg {
+  margin: auto 20px;
+  width: 40px;
+}
+
+header h1 {
+  color: white;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+li {
+  margin: 0px;
+}
+
+#conteudo {
+  display: flex;
+}
+
+#menu {
+  margin: 0;
+  width: 300px;
+  height: 100;
+  min-height: 1100px;
+  border: 0;
+  background-color: #5e5e5e;
+}
+
+#menuList {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItemMenu {
+  background-color: #7d7d7d;
+  justify-content: space-around;
+  margin: 25px;
+  list-style: none;
+  padding: 10px;
+  border: 3px solid #222222;
+  border-radius: 5px;
+}
+
+.listItemMenu:hover {
+  background-color: #9c9c9c;
+}
+
+.listItemMenu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#areaPrincipal {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.divConteudo {
+  height: 45%;
+  width: 90%;
+  border: 2px solid #333333;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#divList {
+  margin: 30px auto;
+  display: table;
+  text-align: center;
+}
+
+#searchInput {
+  margin: 30px;
+  width: 550px;
+}
+
+#divTab {
+  height: 450px;
+  margin: 30px auto;
+  display: none;
+}
+
+#buttonDiv1 {
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 465px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btnForm {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#logout {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover,
+#logout:hover {
+  background-color: #ff5722;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+td,
+th {
+  border: 1px solid #333333;
+  text-align: center;
+  padding: 8px;
+}
+
+#dicasList {
+  width: 560px;
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+#dicasList li {
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.close {
+  float: inline-end;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}

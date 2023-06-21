@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #4CAF50;
+    display: flex;
+  }
+  
+  .headerImg {
+    margin: auto 20px;
+    width: 40px;
+  }
+  
+  header h1 {
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  
+  #conteudo {
+    display: flex;
+  }
+  
+  #menu {
+    width: 300px;
+    min-height: 100vh;
+    border: 0;
+    background-color: #81C784;
+  }
+  
+  #menuList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .listItemMenu {
+    background-color: #AED581;
+    justify-content: space-around;
+    margin: 10px 25px;
+    list-style: none;
+    padding: 10px;
+    border: 3px solid #388E3C;
+    border-radius: 5px;
+  }
+  
+  .listItemMenu:hover {
+    background-color: #C8E6C9;
+  }
+  
+  .listItemMenu a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #areaPrincipal {
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .divConteudo {
+    margin-bottom: 20px;
+    border: 2px solid #388E3C;
+    border-radius: 10px;
+    background-color: #E8F5E9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #divList {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #searchInput {
+    margin: 20px;
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #388E3C;
+    outline: none;
+  }
+  
+  #searchInput::placeholder {
+    color: #757575;
+  }
+  
+  #dicasList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #dicasList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #dicasList li b {
+    display: block;
+    color: #388E3C;
+    margin-bottom: 5px;
+  }
+  
+  #dicasList li .close {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #757575;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #dicasList li .close:hover {
+    color: #BDBDBD;
+  }
+  
+  #divTab {
+    height: 450px;
+    margin: 20px auto;
+    display: none;
+    overflow: auto;
+  }
+  
+  #divTab table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #divTab th,
+  #divTab td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #388E3C;
+  }
+  
+  #divTab th {
+    background-color: #81C784;
+    color: white;
+  }
+  
+  #footer {
+    padding: 10px;
+    background-color: #388E3C;
+    text-align: center;
+    color: white;
+  }
+  

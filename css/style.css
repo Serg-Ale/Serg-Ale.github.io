@@ -1,20 +1,33 @@
-body {
+* {
+    margin: 0;
     border: 0;
-    padding: 0px;
-    margin: 0px;
-    background-color: #45a049;
+    padding: 0;
+}
+
+body {
+    background-color: #557869;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     padding: 20px;
     background-color: #272727;
+    display: flex;
+}
+
+.headerImg {
+    margin: auto 20px;
+    width: 40px;
 }
 
 header h1 {
     color: white;
-    margin: 0;
+    margin: 0 auto;
     text-transform: uppercase;
+}
+
+li {
+    margin: 0px;
 }
 
 #conteudo {
@@ -24,20 +37,46 @@ header h1 {
 #menu {
     margin: 0;
     width: 300px;
-    height: 900px;
+    height: 100;
+    min-height: 1100px;
     border: 0;
-    background-color: #d0d0d0;
+    background-color: #c6cfcb;
+}
+
+#menuList {
+    display: flex;
+    flex-direction: column;
+}
+
+.listItemMenu {
+    background-color: #d3d3d3;
+    justify-content: space-around;
+    margin: 25px;
+    list-style: none;
+    padding: 10px;
+    border: 3px solid #272727;
+    border-radius: 5px;
+}
+
+.listItemMenu:hover {
+    background-color: #e9e9ed;
+}
+
+.listItemMenu a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #areaPrincipal {
-
     width: 100%;
+    height: 100%;
     flex-direction: column;
 }
 
 .divConteudo {
-    height: 400px;
-    width: 2000px;
+    height: 45%;
+    width: 90%;
     border: 2px solid rgb(166, 166, 166);
     margin: 20px auto;
     border-radius: 10px;
@@ -91,7 +130,7 @@ textarea {
 
 
 .btnForm {
-    background-color: #4CAF50;
+    background-color: #77a892;
     color: white;
     padding: 10px 10px;
     border: none;
@@ -99,7 +138,7 @@ textarea {
 }
 
 #logout {
-    background-color: #4CAF50;
+    background-color: #77a892;
     color: white;
     padding: 10px 20px;
     margin: 10px;
@@ -152,7 +191,7 @@ th {
 
 }
 
-li {
+#dicasList li {
     margin: 10px 0px;
     padding: 10px;
 }
@@ -168,7 +207,7 @@ li {
 }
 
 footer {
-    border: 0;
-    margin: 0;
+    padding: 23px;
     background-color: #272727;
+    min-height: 148px;
 }

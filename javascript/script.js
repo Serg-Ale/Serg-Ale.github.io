@@ -67,19 +67,19 @@ function exibirDicas() {
 
     switch (dica.material.toLowerCase()) {
       case "papel":
-        listItem.style.backgroundColor = "blue";
+        listItem.style.backgroundColor = "#3584e4";
         break;
       case "plastico":
-        listItem.style.backgroundColor = "red";
+        listItem.style.backgroundColor = "#ed333b";
         break;
       case "vidro":
-        listItem.style.backgroundColor = "green";
+        listItem.style.backgroundColor = "#57e389";
         break;
       case "metal":
-        listItem.style.backgroundColor = "yellow";
+        listItem.style.backgroundColor = "#f8e45c";
         break;
       case "organico":
-        listItem.style.backgroundColor = "brown";
+        listItem.style.backgroundColor = "#b5835a";
         break;
     }
 
