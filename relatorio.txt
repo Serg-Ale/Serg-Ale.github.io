@@ -3,3 +3,10 @@ A maioria do código gerado para a execução do projeto foi desenvolvida utliza
 Ressalva para algumas funções e partes do css que foram desenvolvidas em paralelo (Mariana Js e Sérgio CSS), porém a maioria foi desenvolvida da forma citada acima!
 
 Encontramos mais dificuldade com relação ao conceito de webStorage, porém estes foram superados durante a execução do projeto.
+
+
+Link para o projeto: 
+
+Repositório do projeto: https://github.com/Serg-Ale/Serg-Ale.github.io
+
+GithubPages: https://serg-ale.github.io/
