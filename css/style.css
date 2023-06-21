@@ -102,6 +102,10 @@ li {
     display: none;
 }
 
+table{
+    margin: 60px auto;
+}
+
 #buttonDiv1 {
     margin: 20px auto;
 }
