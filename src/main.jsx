@@ -9,8 +9,13 @@ import Expressoes from "./routes/Expressoes.jsx";
 import EntradaSaida from "./routes/EntradaSaida.jsx";
 import ConceitosBasicos from "./routes/ConceitosBasicos.jsx";
 import Sequencial from "./routes/Sequencial.jsx";
+import IntroStructs from "./routes/IntroStructs.jsx";
+import ArraysStructs from "./routes/ArraysStructs.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ParamFuncoes from "./routes/ParamFuncoes.jsx";
+import StructsExercicios from "./routes/StructsExercicios.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -40,6 +45,22 @@ const router = createBrowserRouter([
       {
         path: "/fundamentos/sequencial",
         element: <Sequencial />,
+      },
+      {
+        path: "/var-comp-heterogeneas/introducao-structs",
+        element: <IntroStructs />,
+      },
+      {
+        path: "/var-comp-heterogeneas/arrays-structs",
+        element: <ArraysStructs />,
+      },
+      {
+        path: "/var-comp-heterogeneas/structs-param-funcoes",
+        element: <ParamFuncoes />,
+      },
+      {
+        path: "/var-comp-heterogeneas/structs-exercicios",
+        element: <StructsExercicios />,
       },
     ],
   },
