@@ -22,44 +22,54 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/fundamentos/conceitos-basicos",
-        element: <ConceitosBasicos />,
+        path: "fundamentos",
+        children: [
+          {
+            path: "conceitos-basicos",
+            element: <ConceitosBasicos />,
+          },
+          {
+            path: "variaveis",
+            element: <Variaveis />,
+          },
+          {
+            path: "expressoes",
+            element: <Expressoes />,
+          },
+          {
+            path: "entrada-saida",
+            element: <EntradaSaida />,
+          },
+          {
+            path: "sequencial",
+            element: <Sequencial />,
+          },
+        ],
       },
       {
-        path: "/fundamentos/variaveis",
-        element: <Variaveis />,
-      },
-      {
-        path: "/fundamentos/expressoes",
-        element: <Expressoes />,
-      },
-      {
-        path: "/fundamentos/entrada-saida",
-        element: <EntradaSaida />,
-      },
-      {
-        path: "/fundamentos/sequencial",
-        element: <Sequencial />,
-      },
-      {
-        path: "/var-comp-heterogeneas/introducao-structs",
-        element: <IntroStructs />,
-      },
-      {
-        path: "/var-comp-heterogeneas/arrays-structs",
-        element: <ArraysStructs />,
-      },
-      {
-        path: "/var-comp-heterogeneas/structs-param-funcoes",
-        element: <ParamFuncoes />,
-      },
-      {
-        path: "/var-comp-heterogeneas/structs-exercicios",
-        element: <StructsExercicios />,
+        path: "var-comp-heterogeneas",
+        children: [
+          {
+            path: "introducao-structs",
+            element: <IntroStructs />,
+          },
+          {
+            path: "arrays-structs",
+            element: <ArraysStructs />,
+          },
+          {
+            path: "structs-param-funcoes",
+            element: <ParamFuncoes />,
+          },
+          {
+            path: "structs-exercicios",
+            element: <StructsExercicios />,
+          },
+        ],
       },
     ],
   },
