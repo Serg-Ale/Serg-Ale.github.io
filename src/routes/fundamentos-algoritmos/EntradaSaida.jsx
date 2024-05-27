@@ -85,13 +85,6 @@ const EntradaSaida = () => {
           </ul>
         </li>
       </ul>
-      <h3 id="exemplos-de-leitura-de-dados-com-scanf">
-        <strong>
-          1.3 Exemplos de Leitura de Dados com <code>scanf()</code>:
-        </strong>
-      </h3>
-
-      <h1>todo: imagem de exemplo de leitura de dados</h1>
       <h2 id="parte-2-saida-de-dados">
         <strong>Parte 2: Saída de Dados</strong>
       </h2>
@@ -132,12 +125,6 @@ const EntradaSaida = () => {
           </ul>
         </li>
       </ul>
-      <h3 id="exemplos-de-impressao-de-dados-com-printf">
-        <strong>
-          2.3 Exemplos de Impressão de Dados com <code>printf()</code>:
-        </strong>
-      </h3>
-      <h1>todo: colocar imagem de exemplo de impressão de dados</h1>
       <h2 id="exemplo-pratico">
         <strong>Exemplo Prático:</strong>
       </h2>
@@ -145,7 +132,6 @@ const EntradaSaida = () => {
         <strong>Objetivo:</strong> Ler o nome e a idade do usuário e imprimi-los
         na tela formatados.
       </p>
-      <h1>todo: colocar imagem do exemplo prático</h1>
       <h2 id="atividade-proposta">
         <strong>Atividade Proposta:</strong>
       </h2>
