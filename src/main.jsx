@@ -1,19 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import App from "./App.jsx";
 import "./index.css";
 
 import Home from "./routes/Home.jsx";
+
 import Variaveis from "./routes/fundamentos-algoritmos/Variaveis.jsx";
 import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
 import EntradaSaida from "./routes/fundamentos-algoritmos/EntradaSaida.jsx";
 import ConceitosBasicos from "./routes/fundamentos-algoritmos/ConceitosBasicos.jsx";
+
+import IntroVetores from "./routes/var-comp-homogeneas/IntroVetores.jsx";
+import IntroMatrizes from "./routes/var-comp-homogeneas/IntroMatrizes.jsx";
+import ManipulacaoMatrizes from "./routes/var-comp-homogeneas/ManipulacaoMatrizes.jsx";
+import ManipulacaoVetores from "./routes/var-comp-homogeneas/ManipulacaoVetores.jsx";
+
 import IntroStructs from "./routes/var-comp-heterogeneas/IntroStructs.jsx";
 import ArraysStructs from "./routes/var-comp-heterogeneas/ArraysStructs.jsx";
 import ParamFuncoes from "./routes/var-comp-heterogeneas/ParamFuncoes.jsx";
 import StructsExercicios from "./routes/var-comp-heterogeneas/StructsExercicios.jsx";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +49,27 @@ const router = createBrowserRouter([
           {
             path: "entrada-saida",
             element: <EntradaSaida />,
+          },
+        ],
+      },
+      {
+        path: "var-comp-homogeneas",
+        children: [
+          {
+            path: "introducao-vetores",
+            element: <IntroVetores />,
+          },
+          {
+            path: "manipulacao-vetores",
+            element: <ManipulacaoVetores />,
+          },
+          {
+            path: "introducao-matrizes",
+            element: <IntroMatrizes />,
+          },
+          {
+            path: "manipulacao-matrizes",
+            element: <ManipulacaoMatrizes />,
           },
         ],
       },
