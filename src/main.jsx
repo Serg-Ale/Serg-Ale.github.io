@@ -8,7 +8,6 @@ import Variaveis from "./routes/fundamentos-algoritmos/Variaveis.jsx";
 import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
 import EntradaSaida from "./routes/fundamentos-algoritmos/EntradaSaida.jsx";
 import ConceitosBasicos from "./routes/fundamentos-algoritmos/ConceitosBasicos.jsx";
-import Sequencial from "./routes/fundamentos-algoritmos/Sequencial.jsx";
 import IntroStructs from "./routes/var-comp-heterogeneas/IntroStructs.jsx";
 import ArraysStructs from "./routes/var-comp-heterogeneas/ArraysStructs.jsx";
 import ParamFuncoes from "./routes/var-comp-heterogeneas/ParamFuncoes.jsx";
@@ -43,10 +42,6 @@ const router = createBrowserRouter([
           {
             path: "entrada-saida",
             element: <EntradaSaida />,
-          },
-          {
-            path: "sequencial",
-            element: <Sequencial />,
           },
         ],
       },
