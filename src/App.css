@@ -5,7 +5,7 @@
 }
 
 #container {
-  border: chartreuse 2px solid;
+  border:#16Ff65 4px solid;
   border-radius: 12px;
   display: flex;
   flex-direction:row;
