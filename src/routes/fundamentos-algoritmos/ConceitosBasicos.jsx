@@ -1,7 +1,7 @@
 const ConceitosBasicos = () => {
   return (
     <div>
-      <h1>Aula 1: Introdução à Linguagem C e Conceitos Básicos de Algoritmos</h1>
+      <h2>Aula 1: Introdução à Linguagem C e Conceitos Básicos de Algoritmos</h2>
       <h3>Por: Sérgio Alexandre</h3>
 
       <h2>Slides utilizados</h2>

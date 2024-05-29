@@ -2,9 +2,9 @@ const variaveis = () => {
   return (
     <div>
       <div>
-        <h1 id="aula-2-constantes-variaveis-e-tipos-de-dados">
+        <h2 id="aula-2-constantes-variaveis-e-tipos-de-dados">
           <strong>Aula 2: Constantes, Variáveis e Tipos de Dados</strong>
-        </h1>
+        </h2>
         <h3>Por: Sérgio Alexandre</h3>
         <embed
           src="/public/fundamentos/variaveis.pdf"

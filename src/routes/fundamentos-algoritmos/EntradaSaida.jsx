@@ -1,9 +1,9 @@
 const EntradaSaida = () => {
   return (
     <div>
-      <h1 id="aula-4-comandos-de-entrada-e-saida">
+      <h2 id="aula-4-comandos-de-entrada-e-saida">
         <strong>Aula 4: Comandos de Entrada e Saída</strong>
-      </h1>
+      </h2>
       <h3>Por: Sérgio Alexandre</h3>
 
       <embed

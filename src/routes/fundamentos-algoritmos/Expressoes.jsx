@@ -1,9 +1,9 @@
 const Expressoes = () => {
   return (
     <div>
-      <h1 id="aula-3-expressoes-aritmeticas-relacionais-e-logicas">
+      <h2 id="aula-3-expressoes-aritmeticas-relacionais-e-logicas">
         <strong>Aula 3: Expressões Aritméticas, Relacionais e Lógicas</strong>
-      </h1>
+      </h2>
       <h3>Por: Sérgio Alexandre</h3>
 
       <embed
