@@ -4,8 +4,13 @@
   padding: 2rem;
 }
 
+#content {
+  padding: 0 20px;
+}
+
 #container {
   border:#16Ff65 4px solid;
+  background-color: #080808;
   border-radius: 12px;
   display: flex;
   flex-direction:row;

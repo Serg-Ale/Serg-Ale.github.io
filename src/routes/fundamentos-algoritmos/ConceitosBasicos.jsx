@@ -1,11 +1,20 @@
 const ConceitosBasicos = () => {
   return (
     <div>
-      <h2>Aula 1: Introdução à Linguagem C e Conceitos Básicos de Algoritmos</h2>
+      <h2>
+        <strong>
+          Aula 1: Introdução à Linguagem C e Conceitos Básicos de Algoritmos
+        </strong>
+      </h2>
       <h3>Por: Sérgio Alexandre</h3>
 
       <h2>Slides utilizados</h2>
-      <embed src="/public/fundamentos/introducao.pdf" width="1200" height="700" type="application/pdf" />
+      <embed
+        src="/public/fundamentos/introducao.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
 
       <h2>Objetivos</h2>
       <ul>

@@ -3,28 +3,28 @@ import "./styles/Nav.css";
 
 const Nav = () => {
   return (
-    <asside>
+    <aside>
       <nav>
         <h3>Fundamentos de Algoritmos</h3>
         <ul>
           <li>
             <Link to="/fundamentos/conceitos-basicos">
-              Aula 1: Introdução à Linguagem C e Conceitos Básicos de Algoritmos
+              Introdução à Linguagem C e Conceitos Básicos de Algoritmos
             </Link>
           </li>
           <li>
             <Link to="/fundamentos/variaveis">
-              Aula 2 - Constantes, Variáveis e Tipos de Dados
+              Constantes, Variáveis e Tipos de Dados
             </Link>
           </li>
           <li>
             <Link to="/fundamentos/expressoes">
-              Aula 3 - Expressões Aritméticas, Relacionais e Lógicas
+              Expressões Aritméticas, Relacionais e Lógicas
             </Link>
           </li>
           <li>
             <Link to="/fundamentos/entrada-saida">
-              Aula 4 - Comandos de Entrada e Saída
+              Comandos de Entrada e Saída
             </Link>
           </li>
         </ul>
@@ -72,12 +72,12 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/tecnicas-modularizacao/funcoes-procedimentos">
-              Aula 1 - Introdução a Procedimentos e Funções em C
+              Introdução a Procedimentos e Funções em C
             </Link>
           </li>
           <li>
             <Link to="tecnicas-modularizacao/recursividade">
-              Aula 2 - Modularização Avançada e Reutilização de Código
+              Modularização Avançada e Reutilização de Código
             </Link>
           </li>
         </ul>
@@ -88,25 +88,25 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/var-comp-homogeneas/introducao-vetores">
-              Aula 1 - Introdução a Vetores em C
+              Introdução a Vetores em C
             </Link>
           </li>
 
           <li>
             <Link to="/var-comp-homogeneas/manipulacao-vetores">
-              Aula 2 - Manipulação de Vetores em C
+              Manipulação de Vetores em C
             </Link>
           </li>
 
           <li>
             <Link to="/var-comp-homogeneas/introducao-matrizes">
-              Aula 3 - Introdução a Matrizes em C
+              Introdução a Matrizes em C
             </Link>
           </li>
 
           <li>
             <Link to="/var-comp-homogeneas/manipulacao-matrizes">
-              Aula 4 - Manipulação de Matrizes em C
+              Manipulação de Matrizes em C
             </Link>
           </li>
         </ul>
@@ -117,19 +117,19 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="var-comp-heterogeneas/introducao-structs">
-              Aula 1 - Introdução às Structs
+              Introdução às Structs
             </Link>
           </li>
 
           <li>
             <Link to="var-comp-heterogeneas/arrays-structs">
-              Aula 2 - Arrays de Structs
+              Arrays de Structs
             </Link>
           </li>
 
           <li>
             <Link to="var-comp-heterogeneas/structs-param-funcoes">
-              Aula 3 - Structs como Parâmetros de Funções
+              Structs como Parâmetros de Funções
             </Link>
           </li>
 
@@ -140,7 +140,7 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-    </asside>
+    </aside>
   );
 };
 

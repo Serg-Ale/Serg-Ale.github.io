@@ -1,7 +1,8 @@
 header {
   text-align: center;
   padding: 12px;
-  border: #16ff65 4px solid;
+  border: #16ff65 2px solid;
+  background-color: #080808;
   border-radius: 12px;
   margin-bottom: 20px;
 }

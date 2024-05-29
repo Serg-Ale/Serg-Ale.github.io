@@ -1,3 +1,19 @@
 nav {
   padding: 16px;
+  min-width: 350px;
+  max-width: 350px;
+  text-decoration: none;
+}
+
+aside h3 {
+  color: #16Ff65;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+aside {
+  border-right: #16Ff65 4px solid;
+  padding: 8px;
 }
