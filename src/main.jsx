@@ -12,6 +12,9 @@ import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
 import EntradaSaida from "./routes/fundamentos-algoritmos/EntradaSaida.jsx";
 import ConceitosBasicos from "./routes/fundamentos-algoritmos/ConceitosBasicos.jsx";
 
+import FuncoesProcedimentos from "./routes/tecnicas-modularizacao/FuncoesProcedimentos.jsx";
+import Recursividade from "./routes/tecnicas-modularizacao/Recursividade.jsx";
+
 import IntroVetores from "./routes/var-comp-homogeneas/IntroVetores.jsx";
 import IntroMatrizes from "./routes/var-comp-homogeneas/IntroMatrizes.jsx";
 import ManipulacaoMatrizes from "./routes/var-comp-homogeneas/ManipulacaoMatrizes.jsx";
@@ -51,6 +54,19 @@ const router = createBrowserRouter([
             element: <EntradaSaida />,
           },
         ],
+      },
+      {
+        path: "tecnicas-modularizacao",
+        children: [
+          {
+            path: "funcoes-procedimentos",
+            element: <FuncoesProcedimentos />,
+          },
+          {
+            path: "recursividade",
+            element: <Recursividade />,
+          },
+        ]
       },
       {
         path: "var-comp-homogeneas",
