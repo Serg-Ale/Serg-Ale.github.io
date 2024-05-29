@@ -34,17 +34,16 @@ const Nav = () => {
         <h3>Estruturas de Decisão</h3>
         <ul>
           <li>
-            <Link>Place-Holder</Link>
-          </li>
-
-          <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-decisao/decisao-if-else">
+              Estruturas Simples e Compostas</Link>
           </li>
           <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-decisao/decisao-encadeada">
+              Estruturas Encadeadas</Link>
           </li>
           <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-decisao/decisao-final">
+              Prática e Conlusão sobre as Estruturas</Link>
           </li>
         </ul>
       </nav>
@@ -53,17 +52,18 @@ const Nav = () => {
         <h3>Estruturas de Repetição</h3>
         <ul>
           <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-repeticao/laco-while">
+              Laço de Repetição While</Link>
           </li>
           <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-repeticao/laco-do-while">
+            Laço de Repetição Do-While</Link>
           </li>
           <li>
-            <Link>Place-Holder</Link>
+            <Link to="/estruturas-repeticao/laco-for">
+            Laço de Repetição For</Link>
           </li>
-          <li>
-            <Link>Place-Holder</Link>
-          </li>
+
         </ul>
       </nav>
 
