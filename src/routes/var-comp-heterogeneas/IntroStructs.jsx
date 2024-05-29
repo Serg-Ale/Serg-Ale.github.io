@@ -3,6 +3,16 @@ const IntroStructs = () => {
     <div>
       <h2>Aula 1: Introdução às Structs</h2>
 
+      <h3>Por: Mariana de Oliveira</h3>
+
+      <h2>Slides utilizados</h2>
+      <embed
+        src="/public/structs/IntroStructs.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
+
       <h3>1. Introdução</h3>
       <h4>1.1 O que são structs e suas vantagens?</h4>
       <p>

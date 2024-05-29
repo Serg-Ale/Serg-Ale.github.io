@@ -3,6 +3,16 @@ const ParamFuncoes = () => {
       <div>
       <h2>Aula 3: Structs como Parâmetros de Funções</h2>
 
+      <h3>Por: Mariana de Oliveira</h3>
+
+      <h2>Slides utilizados</h2>
+      <embed
+        src="/public/structs/StructsParams.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
+
       <h3>1. Passagem de Structs por Valor</h3>
       <h4>1.1 Cópia de valores e modificações</h4>
       <p>Ao passar uma struct como parâmetro por valor para uma função, uma <strong>cópia</strong> dos valores da struct é criada na memória da função. Modificações feitas na struct dentro da função <strong>não afetam</strong> a struct original na memória da função chamadora.</p>

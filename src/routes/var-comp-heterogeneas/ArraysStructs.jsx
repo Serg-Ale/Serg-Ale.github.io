@@ -3,6 +3,16 @@ const ArraysStructs = () => {
       <div>
       <h2>Aula 2: Arrays de Structs</h2>
 
+      <h3>Por: Mariana de Oliveira</h3>
+
+      <h2>Slides utilizados</h2>
+      <embed
+        src="/public/structs/ArraysStructs.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
+
       <h3>1. Declaração de Arrays de Structs</h3>
       <h4>1.1 Sintaxe e exemplos</h4>
       <p>A sintaxe para declarar um array de structs em C é a seguinte:</p>
