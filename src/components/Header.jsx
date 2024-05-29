@@ -1,7 +1,9 @@
+import "./styles/Header.css";
+
 const Header = () => {
   return (
     <header>
-      <h1>Isso é um header</h1>
+      <h1>Fundamentos da programação</h1>
     </header>
   );
 };
