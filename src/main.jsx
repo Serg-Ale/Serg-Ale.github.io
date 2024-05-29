@@ -12,6 +12,14 @@ import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
 import EntradaSaida from "./routes/fundamentos-algoritmos/EntradaSaida.jsx";
 import ConceitosBasicos from "./routes/fundamentos-algoritmos/ConceitosBasicos.jsx";
 
+import DecisaoIfElse from "./routes/estruturas-decisao/DecidaoIfElse.jsx";
+import DecisaoEncadeada from "./routes/estruturas-decisao/DecisaoEncadeada.jsx";
+import DecisaoFinal from "./routes/estruturas-decisao/DecisaoFinal.jsx";
+
+import LacoWhile from "./routes/estruturas-repeticao/LacoWhile.jsx";
+import LacoDoWhile from "./routes/estruturas-repeticao/LacoDoWhile.jsx";
+import LacoFor from "./routes/estruturas-repeticao/LacoFor.jsx";
+
 import FuncoesProcedimentos from "./routes/tecnicas-modularizacao/FuncoesProcedimentos.jsx";
 import Recursividade from "./routes/tecnicas-modularizacao/Recursividade.jsx";
 
@@ -52,6 +60,40 @@ const router = createBrowserRouter([
           {
             path: "entrada-saida",
             element: <EntradaSaida />,
+          },
+        ],
+      },
+      {
+        path: "estruturas-decisao",
+        children: [
+          {
+            path: "decisao-if-else",
+            element: <DecisaoIfElse />,
+          },
+          {
+            path: "decisao-encadeada",
+            element: <DecisaoEncadeada />,
+          },
+          {
+            path: "decisao-final",
+            element: <DecisaoFinal />,
+          },
+        ],
+      },
+      {
+        path: "estruturas-repeticao",
+        children: [
+          {
+            path: "laco-while",
+            element: <LacoWhile />,
+          },
+          {
+            path: "laco-do-while",
+            element: <LacoDoWhile />,
+          },
+          {
+            path: "laco-for",
+            element: <LacoFor />,
           },
         ],
       },
