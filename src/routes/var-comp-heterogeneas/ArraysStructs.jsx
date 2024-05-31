@@ -1,7 +1,7 @@
 const ArraysStructs = () => {
   return (
     <div>
-      <h2>Aula 2: Arrays de Structs</h2>
+      <h2><strong>Aula 2: Arrays de Structs</strong></h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
@@ -11,7 +11,8 @@ const ArraysStructs = () => {
         src="https://www.youtube.com/embed/32UwgTzLjvk?si=ucuoF-ObktfWrK1Q"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
       <embed
         src="/public/structs/ArraysStructs.pdf"
@@ -20,8 +21,8 @@ const ArraysStructs = () => {
         type="application/pdf"
       />
 
-      <h3>1. Declaração de Arrays de Structs</h3>
-      <h4>1.1 Sintaxe e exemplos</h4>
+      <h3><strong>1. Declaração de Arrays de Structs</strong></h3>
+      <h4><strong>1.1 Sintaxe e exemplos</strong></h4>
       <p>A sintaxe para declarar um array de structs em C é a seguinte:</p>
       <pre>
         <code>
@@ -41,7 +42,7 @@ struct Aluno alunos[10]; // Array de 10 structs Aluno`}
       </pre>
       <p>Nesse exemplo, a struct <code>Aluno</code> é declarada e um array chamado <code>alunos</code> é criado com capacidade para armazenar 10 structs do tipo <code>Aluno</code>.</p>
 
-      <h4>1.2 Inicialização de arrays de structs</h4>
+      <h4><strong>1.2 Inicialização de arrays de structs</strong></h4>
       <p>Os elementos de um array de structs podem ser inicializados da mesma forma que variáveis normais:</p>
       <pre>
         <code>
@@ -53,8 +54,8 @@ struct Aluno alunos[2] = {aluno1, aluno2}; // Inicialização com elementos pré
       </pre>
       <p>Nesse exemplo, as structs <code>aluno1</code> e <code>aluno2</code> são inicializadas e utilizadas para inicializar os dois primeiros elementos do array <code>alunos</code>.</p>
 
-      <h3>2. Acessando Elementos de Arrays de Structs</h3>
-      <h4>2.1 Usando índices e ponteiros</h4>
+      <h3><strong>2. Acessando Elementos de Arrays de Structs</strong></h3>
+      <h4><strong>2.1 Usando índices e ponteiros</strong></h4>
       <p>Os elementos de um array de structs podem ser acessados usando o operador <code>[]</code>:</p>
       <pre>
         <code>
@@ -76,7 +77,7 @@ printf("Matricula: %d\\n", ptr_aluno->matricula);`}
       </pre>
       <p>Nesse exemplo, um ponteiro <code>ptr_aluno</code> é criado e apontado para o primeiro elemento do array <code>alunos</code>. O membro <code>matricula</code> do elemento acessado pelo ponteiro é impresso.</p>
 
-      <h4>2.2 Exemplos práticos</h4>
+      <h4><strong>2.2 Exemplos práticos</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -112,8 +113,8 @@ int main() {
       </pre>
       <p>Este exemplo cria um array <code>pessoas</code> de 3 structs <code>Pessoa</code>. As structs são inicializadas com dados específicos e um loop é utilizado para imprimir o nome e a idade de cada pessoa.</p>
 
-      <h3>3. Funções com Arrays de Structs</h3>
-      <h4>3.1 Passando arrays de structs como parâmetros</h4>
+      <h3><strong>3. Funções com Arrays de Structs</strong></h3>
+      <h4><strong>3.1 Passando arrays de structs como parâmetros</strong></h4>
       <p>Arrays de structs podem ser passados como parâmetros para funções:</p>
       <pre>
         <code>
@@ -138,7 +139,7 @@ int main() {
       </pre>
       <p>Nesse exemplo, a função <code>imprimirAlunos</code> recebe um array de structs <code>Aluno</code> como parâmetro e imprime os dados de cada aluno.</p>
 
-      <h4>3.2 Retornando arrays de structs como resultado</h4>
+      <h4><strong>3.2 Retornando arrays de structs como resultado</strong></h4>
       <p><strong>Observação:</strong> Em C, não é possível retornar diretamente um array de structs como resultado de uma função. Isso porque o tamanho do array alocado na função chamadora pode ser diferente do tamanho esperado pela função que retorna o array.</p>
       <p>Para contornar essa limitação, existem duas abordagens comuns:</p>
       <ul>
@@ -176,8 +177,8 @@ int main() {
       </pre>
       <p>Neste exemplo, a função <code>ordenarAlunosPorNome</code> recebe um array de structs <code>Aluno</code> e ordena seus elementos por nome (usando o algoritmo de bolha como exemplo). A função modifica o próprio array passado como parâmetro.</p>
 
-      <h3>4. Exemplos Práticos</h3>
-      <h4>4.1 Criando um array de structs para armazenar alunos</h4>
+      <h3><strong>4. Exemplos Práticos</strong></h3>
+      <h4><strong>4.1 Criando um array de structs para armazenar alunos</strong></h4>
       <p><strong>Exemplo utilizando a abordagem vista anteriormente:</strong></p>
       <pre>
         <code>
@@ -217,7 +218,7 @@ int main() {
       </pre>
       <p>Este exemplo demonstra a criação e utilização de um array de structs <code>Aluno</code> para armazenar dados de alunos. A função <code>imprimirAlunos</code> é utilizada para exibir as informações de cada aluno.</p>
 
-      <h4>4.2 Ordenando um array de structs por nome</h4>
+      <h4><strong>4.2 Ordenando um array de structs por nome</strong></h4>
       <p><strong>Exemplo utilizando a abordagem de modificar o array dentro da função:</strong></p>
       <pre>
         <code>
@@ -248,7 +249,7 @@ int main() {
       </pre>
       <p>Este exemplo demonstra a ordenação de um array de structs <code>Aluno</code> por nome utilizando a função <code>ordenarAlunosPorNome</code>. A função modifica diretamente o array recebido como parâmetro.</p>
 
-      <h4>4.3 Buscando um elemento em um array de structs</h4>
+      <h4><strong>4.3 Buscando um elemento em um array de structs</strong></h4>
       <p>Aqui, podemos implementar a busca por um elemento no array de structs utilizando duas abordagens:</p>
       <ol>
         <li><strong>Busca sequencial:</strong> Percorre o array elemento por elemento comparando um valor específico com o membro desejado (por exemplo, a matrícula) até encontrar uma correspondência.</li>

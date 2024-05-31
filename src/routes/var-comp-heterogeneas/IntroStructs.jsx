@@ -1,7 +1,7 @@
 const IntroStructs = () => {
   return (
     <div>
-      <h2>Aula 1: Introdução às Structs</h2>
+      <h2><strong>Aula 1: Introdução às Structs</strong></h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
@@ -11,8 +11,8 @@ const IntroStructs = () => {
         src="https://www.youtube.com/embed/CCgVBGzbCTs?si=-a85yHfA7z8Dn9n8"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
-        eferrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
       <embed
         src="/public/structs/IntroStructs.pdf"
@@ -21,8 +21,8 @@ const IntroStructs = () => {
         type="application/pdf"
       />
 
-      <h3>1. Introdução</h3>
-      <h4>1.1 O que são structs e suas vantagens?</h4>
+      <h3><strong>1. Introdução</strong></h3>
+      <h4><strong>1.1 O que são structs e suas vantagens?</strong></h4>
       <p>
         Uma struct, ou estrutura em português, é um tipo de dado composto em C que permite agrupar diferentes tipos de dados em uma única variável. Isso facilita a organização e o gerenciamento de dados relacionados, especialmente quando esses dados possuem diferentes tipos.
       </p>
@@ -33,7 +33,7 @@ const IntroStructs = () => {
         <li><strong>Eficiência:</strong> Permitem otimizar o uso da memória, pois agrupam dados em um único bloco.</li>
       </ul>
 
-      <h4>1.2 Diferença entre structs e unions</h4>
+      <h4><strong>1.2 Diferença entre structs e unions</strong></h4>
       <p>Structs e unions são tipos de dados compostos em C, mas possuem diferenças importantes:</p>
       <ul>
         <li><strong>Structs:</strong> Permitem agrupar dados de diferentes tipos em uma única variável, cada um com seu próprio nome e tipo de dado.</li>
@@ -45,7 +45,7 @@ const IntroStructs = () => {
         <li>Unions: foco em <strong>compartilhar um espaço de memória</strong>.</li>
       </ul>
 
-      <h4>1.3 Declaração e estrutura de uma struct</h4>
+      <h4><strong>1.3 Declaração e estrutura de uma struct</strong></h4>
       <p>A sintaxe para declarar uma struct em C é a seguinte:</p>
       <pre>
         <code>
@@ -67,8 +67,8 @@ const IntroStructs = () => {
       </pre>
       <p>Essa struct define um tipo de dado chamado <code>Ponto</code> com dois membros: <code>x</code> e <code>y</code>, ambos do tipo <code>int</code>.</p>
 
-      <h3>2. Membros de Structs</h3>
-      <h4>2.1 Tipos de dados e modificadores de acesso</h4>
+      <h3><strong>2. Membros de Structs</strong></h3>
+      <h4><strong>2.1 Tipos de dados e modificadores de acesso</strong></h4>
       <p>
         Os membros de uma struct podem ser de qualquer tipo de dado em C, incluindo tipos básicos (int, float, char) e outros tipos compostos (structs, unions).
       </p>
@@ -93,7 +93,7 @@ private:
         Nessa struct, os membros <code>nome</code> e <code>idade</code> são públicos e podem ser acessados de qualquer lugar do código, enquanto o membro <code>cpf</code> é privado e só pode ser acessado dentro da struct <code>Pessoa</code>.
       </p>
 
-      <h4>2.2 Declaração e inicialização de membros</h4>
+      <h4><strong>2.2 Declaração e inicialização de membros</strong></h4>
       <p>Os membros de uma struct podem ser declarados e inicializados da mesma forma que variáveis normais:</p>
       <pre>
         <code>
@@ -102,7 +102,7 @@ private:
       </pre>
       <p>Essa declaração cria uma variável <code>p1</code> do tipo <code>Ponto</code> e inicializa seus membros <code>x</code> e <code>y</code> com os valores 10 e 20, respectivamente.</p>
 
-      <h4>2.3 Acessando membros de structs</h4>
+      <h4><strong>2.3 Acessando membros de structs</strong></h4>
       <p>Os membros de uma struct podem ser acessados usando o operador <code>.</code>:</p>
       <pre>
         <code>
@@ -111,8 +111,8 @@ private:
       </pre>
       <p>Nesse exemplo, o valor do membro <code>x</code> da struct <code>p1</code> é atribuído à variável <code>x</code>.</p>
 
-      <h3>3. Operadores com Structs</h3>
-      <h4>3.1 Atribuição</h4>
+      <h3><strong>3. Operadores com Structs</strong></h3>
+      <h4><strong>3.1 Atribuição</strong></h4>
       <p>Structs podem ser atribuídas umas às outras, copiando os valores de todos os seus membros:</p>
       <pre>
         <code>
@@ -121,7 +121,7 @@ private:
       </pre>
       <p>Nesse exemplo, a struct <code>p2</code> é inicializada com os mesmos valores da struct <code>p1</code>.</p>
 
-      <h4>3.2 Comparação</h4>
+      <h4><strong>3.2 Comparação</strong></h4>
       <p>Structs podem ser comparadas usando os operadores relacionais (<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>). A comparação é feita membro a membro:</p>
       <pre>
         <code>
@@ -132,14 +132,14 @@ private:
       </pre>
       <p>Nesse exemplo, as structs <code>p1</code> e <code>p2</code> são comparadas. Se todos os seus membros forem iguais, o bloco <code>if</code> será executado.</p>
 
-      <h4>3.3 Cópia</h4>
+      <h4><strong>3.3 Cópia</strong></h4>
       <p>Structs podem ser copiadas usando a função <code>memcpy()</code>:</p>
       <p><strong>Observação sobre a cópia de structs:</strong></p>
       <p>A função <code>memcpy()</code> copia o conteúdo bruto da memória, sem levar em conta os tipos de dados dos membros. É importante usá-la com cautela e apenas quando se sabe exatamente o tamanho e a disposição dos membros na memória.</p>
       <p>Para cópias seguras e que respeitem os tipos de dados, é recomendável criar uma função específica para cada struct que realize a cópia membro a membro.</p>
 
-      <h3>4. Exemplos Práticos</h3>
-      <h4>4.1 Criando uma struct para representar um ponto no plano</h4>
+      <h3><strong>4. Exemplos Práticos</strong></h3>
+      <h4><strong>4.1 Criando uma struct para representar um ponto no plano</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -164,7 +164,7 @@ int main() {
       </pre>
       <p>Este exemplo define uma struct <code>Ponto</code> com dois membros, <code>x</code> e <code>y</code>, ambos do tipo <code>int</code>. A função <code>main</code> declara uma variável <code>p1</code> do tipo <code>Ponto</code>, modifica seus membros e imprime as coordenadas do ponto no plano.</p>
 
-      <h4>4.2 Criando uma struct para representar uma data</h4>
+      <h4><strong>4.2 Criando uma struct para representar uma data</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -191,7 +191,7 @@ int main() {
       </pre>
       <p>Este exemplo define uma struct <code>Data</code> com três membros: <code>dia</code>, <code>mes</code> e <code>ano</code>, todos do tipo <code>int</code>. A função <code>main</code> declara uma variável <code>hoje</code> do tipo <code>Data</code>, inicializa seus membros e imprime a data formatada.</p>
 
-      <h4>4.3 Manipulando structs e seus membros</h4>
+      <h4><strong>4.3 Manipulando structs e seus membros</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>

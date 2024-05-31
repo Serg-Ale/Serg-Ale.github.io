@@ -1,7 +1,7 @@
 const ParamFuncoes = () => {
   return (
     <div>
-      <h2>Aula 3: Structs como Parâmetros de Funções</h2>
+      <h2><strong>Aula 3: Structs como Parâmetros de Funções</strong></h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
@@ -22,8 +22,8 @@ const ParamFuncoes = () => {
         type="application/pdf"
       />
 
-      <h3>1. Passagem de Structs por Valor</h3>
-      <h4>1.1 Cópia de valores e modificações</h4>
+      <h3><strong>1. Passagem de Structs por Valor</strong></h3>
+      <h4><strong>1.1 Cópia de valores e modificações</strong></h4>
       <p>Ao passar uma struct como parâmetro por valor para uma função, uma <strong>cópia</strong> dos valores da struct é criada na memória da função. Modificações feitas na struct dentro da função <strong>não afetam</strong> a struct original na memória da função chamadora.</p>
       <p><strong>Exemplo:</strong></p>
       <pre>
@@ -53,8 +53,8 @@ int main() {
       </pre>
       <p>Neste exemplo, a função <code>modificarPonto</code> recebe uma struct <code>Ponto</code> por valor. A função modifica a cópia da struct, mas a struct original na função <code>main</code> permanece inalterada.</p>
 
-      <h3>2. Passagem de Structs por Referência</h3>
-      <h4>2.1 Modificando a struct original</h4>
+      <h3><strong>2. Passagem de Structs por Referência</strong></h3>
+      <h4><strong>2.1 Modificando a struct original</strong></h4>
       <p>Ao passar uma struct como parâmetro por referência para uma função, o <strong>endereço de memória</strong> da struct original é passado para a função. Modificações feitas na struct dentro da função <strong>afetam</strong> a struct original na memória da função chamadora.</p>
       <p><strong>Exemplo:</strong></p>
       <pre>
@@ -84,7 +84,7 @@ int main() {
       </pre>
       <p>Neste exemplo, a função <code>modificarPonto</code> recebe um ponteiro para uma struct <code>Ponto</code> como parâmetro. A função modifica a struct original através do ponteiro, alterando os valores da struct na memória da função <code>main</code>.</p>
 
-      <h4>2.2 Ponteiros para structs</h4>
+      <h4><strong>2.2 Ponteiros para structs</strong></h4>
       <p>Para passar uma struct por referência, é necessário utilizar um ponteiro para a struct. O operador <code>&</code> é utilizado para obter o endereço de memória de uma variável.</p>
       <p><strong>Exemplo:</strong></p>
       <pre>
@@ -112,8 +112,8 @@ int main() {
       </pre>
       <p>Neste exemplo, o ponteiro <code>ptr_ponto</code> é criado para armazenar o endereço de memória da struct <code>p1</code>. O ponteiro é então passado para a função <code>modificarPonto</code> como parâmetro.</p>
 
-      <h3>3. Exemplos Práticos</h3>
-      <h4>3.1 Função para calcular a área de um retângulo</h4>
+      <h3><strong>3. Exemplos Práticos</strong></h3>
+      <h4><strong>3.1 Função para calcular a área de um retângulo</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -140,7 +140,7 @@ int main() {
       </pre>
       <p>Neste exemplo, a função <code>calcularAreaRetangulo</code> recebe uma struct <code>Retangulo</code> por valor e calcula sua área. A struct é copiada para a memória da função, mas a struct original na função <code>main</code> não é modificada.</p>
 
-      <h4>3.2 Função para trocar os valores de duas structs</h4>
+      <h4><strong>3.2 Função para trocar os valores de duas structs</strong></h4>
       <pre>
         <code>
           {`#include <stdio.h>
