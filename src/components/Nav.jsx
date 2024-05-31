@@ -77,7 +77,7 @@ const Nav = () => {
           </li>
           <li>
             <Link to="tecnicas-modularizacao/recursividade">
-              Modularização Avançada e Reutilização de Código
+              Introdução a Recursividade
             </Link>
           </li>
         </ul>
