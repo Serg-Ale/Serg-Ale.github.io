@@ -4,6 +4,14 @@ const IntroVetores = () => {
       <h1>Aula 1: Desvendando os Vetores em C</h1>
       <h3>Por: Sérgio Alexandre</h3>
 
+
+      <embed
+        src="/public/homogeneas/intro-vet.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
+
       <p>
         <strong>Objetivo:</strong> Mergulhe no mundo dos vetores em C e aprenda
         a dominá-los!
@@ -92,7 +100,8 @@ const IntroVetores = () => {
       <h3>3. Com um valor único:</h3>
       <pre>
         <code>
-          char feiticos[50] = {"F"}; // Todos os feitiços são ``Fogo`` no início.
+          char feiticos[50] = {"F"}; // Todos os feitiços são ``Fogo`` no
+          início.
         </code>
       </pre>
 
@@ -133,6 +142,7 @@ const IntroVetores = () => {
           </strong>
         </li>
       </ul>
+
     </div>
   );
 };

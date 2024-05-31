@@ -4,6 +4,14 @@ const IntroMatrizes = () => {
       <h2>Aula 3: Desvendando as Matrizes em C</h2>
       <h3>Por: Sérgio Alexandre</h3>
 
+      <embed
+        src="/public/homogeneas/intro-mat.pdf"
+        width="1200"
+        height="700"
+        type="application/pdf"
+      />
+
+
       <h3>Objetivo:</h3>
       <ul>
         <li>
