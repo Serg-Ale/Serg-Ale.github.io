@@ -1,11 +1,20 @@
 const ParamFuncoes = () => {
-    return (
-      <div>
+  return (
+    <div>
       <h2>Aula 3: Structs como Parâmetros de Funções</h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
       <h2>Slides utilizados</h2>
+      <iframe width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/2Upth-a9vps?si=jMHW6Hr10jh43_76"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
       <embed
         src="/public/structs/StructsParams.pdf"
         width="1200"
@@ -19,7 +28,7 @@ const ParamFuncoes = () => {
       <p><strong>Exemplo:</strong></p>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 
 struct Ponto {
   int x;
@@ -50,7 +59,7 @@ int main() {
       <p><strong>Exemplo:</strong></p>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 
 struct Ponto {
   int x;
@@ -80,7 +89,7 @@ int main() {
       <p><strong>Exemplo:</strong></p>
       <pre>
         <code>
-{`struct Ponto {
+          {`struct Ponto {
   int x;
   int y;
 };
@@ -107,7 +116,7 @@ int main() {
       <h4>3.1 Função para calcular a área de um retângulo</h4>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 
 struct Retangulo {
   int base;
@@ -134,7 +143,7 @@ int main() {
       <h4>3.2 Função para trocar os valores de duas structs</h4>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 
 struct Ponto {
   int x;
@@ -169,8 +178,7 @@ int main() {
 
       <p>Esses exemplos demonstram a diferença entre passar structs por valor e por referência como parâmetros para funções em C. A escolha do método apropriado depende da necessidade de modificar a struct original dentro da função.</p>
     </div>
-    );
-  };
-  
-  export default ParamFuncoes;
-  
+  );
+};
+
+export default ParamFuncoes;

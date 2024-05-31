@@ -1,11 +1,18 @@
 const ArraysStructs = () => {
-    return (
-      <div>
+  return (
+    <div>
       <h2>Aula 2: Arrays de Structs</h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
       <h2>Slides utilizados</h2>
+      <iframe width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/32UwgTzLjvk?si=ucuoF-ObktfWrK1Q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
       <embed
         src="/public/structs/ArraysStructs.pdf"
         width="1200"
@@ -18,13 +25,13 @@ const ArraysStructs = () => {
       <p>A sintaxe para declarar um array de structs em C é a seguinte:</p>
       <pre>
         <code>
-{`tipo_da_struct nome_do_array[tamanho];`}
+          {`tipo_da_struct nome_do_array[tamanho];`}
         </code>
       </pre>
       <p><strong>Exemplo:</strong></p>
       <pre>
         <code>
-{`struct Aluno {
+          {`struct Aluno {
   char nome[50];
   int matricula;
 };
@@ -38,7 +45,7 @@ struct Aluno alunos[10]; // Array de 10 structs Aluno`}
       <p>Os elementos de um array de structs podem ser inicializados da mesma forma que variáveis normais:</p>
       <pre>
         <code>
-{`struct Aluno aluno1 = {"Ana Silva", 12345};
+          {`struct Aluno aluno1 = {"Ana Silva", 12345};
 struct Aluno aluno2 = {"João Santos", 54321};
 
 struct Aluno alunos[2] = {aluno1, aluno2}; // Inicialização com elementos pré-definidos`}
@@ -51,7 +58,7 @@ struct Aluno alunos[2] = {aluno1, aluno2}; // Inicialização com elementos pré
       <p>Os elementos de um array de structs podem ser acessados usando o operador <code>[]</code>:</p>
       <pre>
         <code>
-{`struct Aluno aluno = alunos[0]; // Acessa o primeiro elemento do array
+          {`struct Aluno aluno = alunos[0]; // Acessa o primeiro elemento do array
 
 // Acessando membros de um elemento específico
 printf("Nome: %s\\n", alunos[1].nome);`}
@@ -61,7 +68,7 @@ printf("Nome: %s\\n", alunos[1].nome);`}
       <p>Ponteiros também podem ser usados para acessar elementos de arrays de structs:</p>
       <pre>
         <code>
-{`struct Aluno *ptr_aluno = &alunos[0]; // Ponteiro para o primeiro elemento
+          {`struct Aluno *ptr_aluno = &alunos[0]; // Ponteiro para o primeiro elemento
 
 // Acessando membros através do ponteiro
 printf("Matricula: %d\\n", ptr_aluno->matricula);`}
@@ -72,7 +79,7 @@ printf("Matricula: %d\\n", ptr_aluno->matricula);`}
       <h4>2.2 Exemplos práticos</h4>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 #include <string.h>
 
 struct Pessoa {
@@ -110,7 +117,7 @@ int main() {
       <p>Arrays de structs podem ser passados como parâmetros para funções:</p>
       <pre>
         <code>
-{`void imprimirAlunos(struct Aluno alunos[], int tamanho) {
+          {`void imprimirAlunos(struct Aluno alunos[], int tamanho) {
   // Imprime os dados de cada aluno do array
   for (int i = 0; i < tamanho; i++) {
     printf("Nome: %s\\n", alunos[i].nome);
@@ -141,7 +148,7 @@ int main() {
       <p><strong>Exemplo (modificando o array dentro da função):</strong></p>
       <pre>
         <code>
-{`void ordenarAlunosPorNome(struct Aluno alunos[], int tamanho) {
+          {`void ordenarAlunosPorNome(struct Aluno alunos[], int tamanho) {
   // Ordenação por bolha (exemplo simples)
   for (int i = 0; i < tamanho - 1; i++) {
     for (int j = 0; j < tamanho - i - 1; j++) {
@@ -174,7 +181,7 @@ int main() {
       <p><strong>Exemplo utilizando a abordagem vista anteriormente:</strong></p>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 #include <string.h>
 
 struct Aluno {
@@ -214,7 +221,7 @@ int main() {
       <p><strong>Exemplo utilizando a abordagem de modificar o array dentro da função:</strong></p>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 #include <string.h>
 
 struct Aluno {
@@ -250,7 +257,7 @@ int main() {
       <p><strong>Exemplo (busca sequencial por matrícula):</strong></p>
       <pre>
         <code>
-{`#include <stdio.h>
+          {`#include <stdio.h>
 
 struct Aluno {
   char nome[50];
@@ -289,8 +296,7 @@ int main() {
       <p>A busca binária requer que o array de structs esteja previamente ordenado por um determinado critério. Implementar a busca binária envolve conceitos adicionais de ordenação e pesquisa binária que podem ser abordados em aulas posteriores.</p>
       <p>Lembre-se que essas são apenas algumas aplicações básicas de arrays de structs em C. Existem muitas outras possibilidades de manipulação e organização de dados complexos utilizando esse recurso.</p>
     </div>
-    );
-  };
-  
-  export default ArraysStructs;
-  
+  );
+};
+
+export default ArraysStructs;
