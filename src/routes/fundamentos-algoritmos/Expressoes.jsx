@@ -5,6 +5,14 @@ const Expressoes = () => {
         <strong>Aula 3: Expressões Aritméticas, Relacionais e Lógicas</strong>
       </h2>
       <h3>Por: Sérgio Alexandre</h3>
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/vEeG0h4VSJg?si=4dQns6_BknpIOmiD"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
       <embed
         src="/public/fundamentos/expressoes.pdf"

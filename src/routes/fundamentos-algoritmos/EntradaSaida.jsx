@@ -6,6 +6,15 @@ const EntradaSaida = () => {
       </h2>
       <h3>Por: Sérgio Alexandre</h3>
 
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/K8V6Wygy1s0?si=pDUZMhMeMZSC4qa4"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
       <embed
         src="/public/fundamentos/entrada-saida.pdf"
         width="1200"

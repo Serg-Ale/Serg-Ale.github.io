@@ -6,6 +6,14 @@ const variaveis = () => {
           <strong>Aula 2: Constantes, Variáveis e Tipos de Dados</strong>
         </h2>
         <h3>Por: Sérgio Alexandre</h3>
+        <iframe
+          width="1200"
+          height="700"
+          src="https://www.youtube.com/embed/20KoFbvywsI?si=L_GndIGCiT_dlIrw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <embed
           src="/public/fundamentos/variaveis.pdf"
           width="1200"

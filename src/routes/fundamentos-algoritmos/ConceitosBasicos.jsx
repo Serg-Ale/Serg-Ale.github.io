@@ -9,6 +9,14 @@ const ConceitosBasicos = () => {
       <h3>Por: Sérgio Alexandre</h3>
 
       <h2>Slides utilizados</h2>
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/F7GQUAQLaEI?si=5andhJgR71w-wBGX"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <embed
         src="/public/fundamentos/introducao.pdf"
         width="1200"
