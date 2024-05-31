@@ -5,8 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 
-import Home from "./routes/Home.jsx";
-
 import Variaveis from "./routes/fundamentos-algoritmos/Variaveis.jsx";
 import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
 import EntradaSaida from "./routes/fundamentos-algoritmos/EntradaSaida.jsx";
@@ -40,7 +38,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <ConceitosBasicos />,
       },
       {
         path: "fundamentos",
