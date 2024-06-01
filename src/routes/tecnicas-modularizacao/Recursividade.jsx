@@ -5,7 +5,7 @@ const Recursividade = () => {
         <strong>Aula 2: Introdução a Recursividade</strong>
       </h2>
       <h3>Por: Giovana Hoffmann</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/8FeuNLzMrrk?si=VzAkPKgT7gK4IH10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="1200" height="700" src="https://www.youtube.com/embed/8FeuNLzMrrk?si=VzAkPKgT7gK4IH10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <embed
         src="/public/modularizacao/recursividade.pdf"
         width="1200"
@@ -81,6 +81,58 @@ int main() {
     imprimirOi(n);  // Chama a função recursiva começando de limite até 1
     return 0;
 }
+        `}</code>
+      </pre>
+      <h5><strong>Explicação</strong></h5>
+      <p>
+        A função <code>imprimirOi(n)</code> realiza chamadas recursivas
+        decrementando <code>n</code> até que <code>n</code> seja igual a 0. Em
+        cada chamada, se <code>n</code> não for 0, a função chama
+        <code>imprimirOi</code> com <code>n-1</code> e, após retornar, imprime
+        "`n - oi`". Quando <code>n</code> chega a 0, a recursão termina.
+      </p>
+
+      <p>Sequência das chamadas e execução:</p>
+      <ol>
+        <li><code>imprimirOi(5)</code> chama <code>imprimirOi(4)</code>.</li>
+        <li><code>imprimirOi(4)</code> chama <code>imprimirOi(3)</code>.</li>
+        <li><code>imprimirOi(3)</code> chama <code>imprimirOi(2).</code></li>
+        <li><code>imprimirOi(2)</code> chama <code>imprimirOi(1)</code>.</li>
+        <li><code>imprimirOi(1)</code> chama <code>imprimirOi(0)</code>.</li>
+        <li>
+          <code>imprimirOi(0)</code> atinge o caso base (<code>n == 0</code>) e
+          encerra a recursão.
+        </li>
+        <li>
+          Execução volta para <code>imprimirOi(1)</code> e imprime "1 - oi" e
+          encerra esta chamada.
+        </li>
+        <li>
+          Execução volta para <code>imprimirOi(2)</code> e imprime "2 - oi" e
+          encerra esta chamada.
+        </li>
+        <li>
+          Execução volta para <code>imprimirOi(3)</code> e imprime "3 - oi" e
+          encerra esta chamada.
+        </li>
+        <li>
+          Execução volta para <code>imprimirOi(4)</code> e imprime "4 - oi" e
+          encerra esta chamada.
+        </li>
+        <li>
+          Execução volta para <code>imprimirOi(5)</code> e imprime "5 - oi" e
+          encerra a chamada da função.
+        </li>
+      </ol>
+
+      <h5><strong>Saída do código</strong></h5>
+      <pre>
+        <code>{`
+1 - oi
+2 - oi
+3 - oi
+4 - oi
+5 - oi
         `}</code>
       </pre>
 
