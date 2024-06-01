@@ -5,7 +5,7 @@ const FuncoesProcedimentos = () => {
         <strong>Aula 1: Introdução a Procedimentos e Funções</strong>
       </h2>
       <h3>Por: Giovana Hoffmann</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/odoDclPaL1Y?si=2kKgCUFjCgDb_64y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="1200" height="700" src="https://www.youtube.com/embed/odoDclPaL1Y?si=2kKgCUFjCgDb_64y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <embed
         src="/public/modularizacao/funcoes_procedimentos.pdf"
         width="1200"
@@ -60,6 +60,9 @@ const FuncoesProcedimentos = () => {
         <li>
           <strong>Passagem por Valor:</strong> Uma cópia do valor do parâmetro é passada para o procedimento ou função. Alterações no parâmetro dentro do bloco de código não afetam o valor original fora dele.
         </li>
+        <li>
+          <strong>Passagem por Referência:</strong> O endereço de memória do parâmetro é passado para o procedimento ou função. Isso permite que o procedimento ou função acesse e modifique diretamente o valor original do parâmetro. Qualquer alteração feita no parâmetro dentro do bloco de código afetará o valor original fora do procedimento ou função.
+        </li>
       </ul>
 
       <h2>Parte 3: Utilização de Valores de Retorno em Funções</h2>
@@ -73,94 +76,102 @@ const FuncoesProcedimentos = () => {
         </li>
       </ul>
 
-      <h2>Parte 4: Exemplos Práticos</h2>
-
-      <h3>4.1 Exemplo de Passagem de Parâmetros e Retorno de Valores</h3>
-      <pre>
-        <code>
-          {`#include <stdio.h>
-
-// Função que retorna a soma de dois números
-int somar(int a, int b) {
-    int resultado = a + b;
-    return resultado;
-}
-
-int main() {
-    int num1 = 5;
-    int num2 = 3;
-
-    // Chamada da função e armazenamento do resultado
-    int soma = somar(num1, num2);
-
-    printf("A soma de %d e %d é: %d\\n", num1, num2, soma);
-
-    return 0;
-}`}
-        </code>
-      </pre>
-
       <h2>Parte 5: Declaração e Chamada de Procedimentos e Funções</h2>
 
       <h3>5.1 Declaração de Procedimentos</h3>
       <pre>
         <code>
-          {`// Procedimento
-void cumprimentar() {
-    printf("Olá! Bem-vindo ao meu programa!");
-}`}
+          {`
+          // Procedimento
+          void cumprimentar() {
+              printf("Olá! Bem-vindo ao meu programa!");
+          }
+        `}
         </code>
       </pre>
 
       <h3>5.2 Declaração de Funções</h3>
       <pre>
         <code>
-          {`// Função
-int somar(int a, int b) {
-    int resultado = a + b;
-    return resultado;
-}`}
+          {`
+          // Função
+          int somar(int a, int b) {
+              int resultado = a + b;
+              return resultado;
+          }
+          `}
         </code>
       </pre>
 
       <h3>5.3 Chamada de Procedimentos e Funções</h3>
       <pre>
         <code>
-          {`int main() {
-    // Chamada do procedimento
-    cumprimentar();
+          {`
+          int main() {
+          // Chamada do procedimento
+          cumprimentar();
 
-    // Chamada da função e exibição do resultado
-    int resultado = somar(5, 3);
-    printf("O resultado da soma é: %d", resultado);
-    return 0;
-}`}
+          // Chamada da função e exibição do resultado
+          int resultado = somar(5, 3);
+          printf("O resultado da soma é: %d", resultado);
+          return 0;
+         }
+`}
         </code>
       </pre>
 
       <h3>5.4 Código Completo</h3>
       <pre>
         <code>
-          {`// Procedimento
-void cumprimentar() {
-    printf("Olá! Bem-vindo ao meu programa!");
-}
+          {`
+          #include <stdio.h>
+          // Procedimento
+          void cumprimentar() {
+              printf("Olá! Bem-vindo ao meu programa!");
+          }
 
-// Função
-int somar(int a, int b) {
-    int resultado = a + b;
-    return resultado;
-} 
+          // Função
+          int somar(int a, int b) {
+              int resultado = a + b;
+              return resultado;
+          } 
 
-int main() {
-    // Chamada do procedimento
-    cumprimentar();
+          int main() {
+              // Chamada do procedimento
+              cumprimentar();
 
-    // Chamada da função e exibição do resultado
-    int resultado = somar(5, 3);
-    printf("O resultado da soma é: %d", resultado);
-    return 0;
-}`}
+              // Chamada da função e exibição do resultado
+              int resultado = somar(5, 3);
+              printf("O resultado da soma é: %d", resultado);
+              return 0;
+          }
+      `}
+        </code>
+      </pre>
+
+
+
+      <h3>5.4 Outro Exemplo</h3>
+      <p>Neste exemplo, temos uma função que calcula o quadrado de um número fornecido pelo usuário.</p>
+      <pre>
+        <code>
+          {`
+          #include <stdio.h>
+
+          // Função que calcula o quadrado de um número
+          int quadrado(int num) {
+              return num * num;
+          }
+
+          int main() {
+              int numero;
+              printf("Digite um número: ");
+              scanf("%d", &numero);
+              int resultado = quadrado(numero);
+              printf("%d ao quadrado é %d\n", numero, resultado);
+              return 0;
+          }
+          `}
         </code>
       </pre>
     </div>
