@@ -152,7 +152,7 @@ const Nav = () => {
       </nav>
 
       <nav>
-        <h3>Códigos-Fonte</h3>
+        <h3>Códigos Fonte & Materiais</h3>
         <ul>
           <li>
             <Link to="https://github.com/Serg-Ale/site-certificadora/tree/main">
@@ -162,6 +162,11 @@ const Nav = () => {
           <li>
             <Link to="https://github.com/Serg-Ale/REA-Fundamentos-De-Programacao">
               Planejamento
+            </Link>
+          </li>
+          <li>
+            <Link to="https://github.com/Serg-Ale/REA-Fundamentos-De-Programacao/tree/main/slides">
+              Slides
             </Link>
           </li>
         </ul>
