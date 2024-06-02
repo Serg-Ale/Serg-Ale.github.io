@@ -5,8 +5,6 @@ const DecisaoFinal = () => {
         <strong>Aula 3: Estruturas de Decisão resumo e conclusão</strong>
       </h2>
       <h3>Por: Pedro Machado</h3>
-
-      <h2>Slides utilizados</h2>
       <iframe
         width="1200"
         height="700"

@@ -5,8 +5,6 @@ const LacoFor = () => {
         <strong>Aula 2: Estruturas de Repetição com laço For</strong>
       </h2>
       <h3>Por: Pedro Machado</h3>
-
-      <h2>Slides utilizados</h2>
       <iframe
         width="1200"
         height="700"
