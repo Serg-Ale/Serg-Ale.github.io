@@ -1,19 +1,21 @@
 const ArraysStructs = () => {
   return (
     <div>
-      <h2><strong>Aula 2: Arrays de Structs</strong></h2>
+      <h2>
+        <strong>Aula 2: Arrays de Structs</strong>
+      </h2>
 
       <h3>Por: Mariana de Oliveira</h3>
 
       <h2>Slides utilizados</h2>
-      <iframe width="1200"
+      <iframe
+        width="1200"
         height="700"
         src="https://www.youtube.com/embed/32UwgTzLjvk?si=ucuoF-ObktfWrK1Q"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
+        allowfullscreen
+      ></iframe>
       <embed
         src="/public/structs/ArraysStructs.pdf"
         width="1200"
@@ -21,15 +23,19 @@ const ArraysStructs = () => {
         type="application/pdf"
       />
 
-      <h3><strong>1. Declaração de Arrays de Structs</strong></h3>
-      <h4><strong>1.1 Sintaxe e exemplos</strong></h4>
+      <h3>
+        <strong>1. Declaração de Arrays de Structs</strong>
+      </h3>
+      <h4>
+        <strong>1.1 Sintaxe e exemplos</strong>
+      </h4>
       <p>A sintaxe para declarar um array de structs em C é a seguinte:</p>
       <pre>
-        <code>
-          {`tipo_da_struct nome_do_array[tamanho];`}
-        </code>
+        <code>{`tipo_da_struct nome_do_array[tamanho];`}</code>
       </pre>
-      <p><strong>Exemplo:</strong></p>
+      <p>
+        <strong>Exemplo:</strong>
+      </p>
       <pre>
         <code>
           {`struct Aluno {
@@ -40,10 +46,19 @@ const ArraysStructs = () => {
 struct Aluno alunos[10]; // Array de 10 structs Aluno`}
         </code>
       </pre>
-      <p>Nesse exemplo, a struct <code>Aluno</code> é declarada e um array chamado <code>alunos</code> é criado com capacidade para armazenar 10 structs do tipo <code>Aluno</code>.</p>
+      <p>
+        Nesse exemplo, a struct <code>Aluno</code> é declarada e um array
+        chamado <code>alunos</code> é criado com capacidade para armazenar 10
+        structs do tipo <code>Aluno</code>.
+      </p>
 
-      <h4><strong>1.2 Inicialização de arrays de structs</strong></h4>
-      <p>Os elementos de um array de structs podem ser inicializados da mesma forma que variáveis normais:</p>
+      <h4>
+        <strong>1.2 Inicialização de arrays de structs</strong>
+      </h4>
+      <p>
+        Os elementos de um array de structs podem ser inicializados da mesma
+        forma que variáveis normais:
+      </p>
       <pre>
         <code>
           {`struct Aluno aluno1 = {"Ana Silva", 12345};
@@ -52,11 +67,22 @@ struct Aluno aluno2 = {"João Santos", 54321};
 struct Aluno alunos[2] = {aluno1, aluno2}; // Inicialização com elementos pré-definidos`}
         </code>
       </pre>
-      <p>Nesse exemplo, as structs <code>aluno1</code> e <code>aluno2</code> são inicializadas e utilizadas para inicializar os dois primeiros elementos do array <code>alunos</code>.</p>
+      <p>
+        Nesse exemplo, as structs <code>aluno1</code> e <code>aluno2</code> são
+        inicializadas e utilizadas para inicializar os dois primeiros elementos
+        do array <code>alunos</code>.
+      </p>
 
-      <h3><strong>2. Acessando Elementos de Arrays de Structs</strong></h3>
-      <h4><strong>2.1 Usando índices e ponteiros</strong></h4>
-      <p>Os elementos de um array de structs podem ser acessados usando o operador <code>[]</code>:</p>
+      <h3>
+        <strong>2. Acessando Elementos de Arrays de Structs</strong>
+      </h3>
+      <h4>
+        <strong>2.1 Usando índices e ponteiros</strong>
+      </h4>
+      <p>
+        Os elementos de um array de structs podem ser acessados usando o
+        operador <code>[]</code>:
+      </p>
       <pre>
         <code>
           {`struct Aluno aluno = alunos[0]; // Acessa o primeiro elemento do array
@@ -65,8 +91,15 @@ struct Aluno alunos[2] = {aluno1, aluno2}; // Inicialização com elementos pré
 printf("Nome: %s\\n", alunos[1].nome);`}
         </code>
       </pre>
-      <p>Nesse exemplo, o primeiro elemento do array <code>alunos</code> é acessado e armazenado na variável <code>aluno</code>. O membro <code>nome</code> do segundo elemento do array é acessado e impresso.</p>
-      <p>Ponteiros também podem ser usados para acessar elementos de arrays de structs:</p>
+      <p>
+        Nesse exemplo, o primeiro elemento do array <code>alunos</code> é
+        acessado e armazenado na variável <code>aluno</code>. O membro{" "}
+        <code>nome</code> do segundo elemento do array é acessado e impresso.
+      </p>
+      <p>
+        Ponteiros também podem ser usados para acessar elementos de arrays de
+        structs:
+      </p>
       <pre>
         <code>
           {`struct Aluno *ptr_aluno = &alunos[0]; // Ponteiro para o primeiro elemento
@@ -75,9 +108,15 @@ printf("Nome: %s\\n", alunos[1].nome);`}
 printf("Matricula: %d\\n", ptr_aluno->matricula);`}
         </code>
       </pre>
-      <p>Nesse exemplo, um ponteiro <code>ptr_aluno</code> é criado e apontado para o primeiro elemento do array <code>alunos</code>. O membro <code>matricula</code> do elemento acessado pelo ponteiro é impresso.</p>
+      <p>
+        Nesse exemplo, um ponteiro <code>ptr_aluno</code> é criado e apontado
+        para o primeiro elemento do array <code>alunos</code>. O membro{" "}
+        <code>matricula</code> do elemento acessado pelo ponteiro é impresso.
+      </p>
 
-      <h4><strong>2.2 Exemplos práticos</strong></h4>
+      <h4>
+        <strong>2.2 Exemplos práticos</strong>
+      </h4>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -111,10 +150,18 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Este exemplo cria um array <code>pessoas</code> de 3 structs <code>Pessoa</code>. As structs são inicializadas com dados específicos e um loop é utilizado para imprimir o nome e a idade de cada pessoa.</p>
+      <p>
+        Este exemplo cria um array <code>pessoas</code> de 3 structs{" "}
+        <code>Pessoa</code>. As structs são inicializadas com dados específicos
+        e um loop é utilizado para imprimir o nome e a idade de cada pessoa.
+      </p>
 
-      <h3><strong>3. Funções com Arrays de Structs</strong></h3>
-      <h4><strong>3.1 Passando arrays de structs como parâmetros</strong></h4>
+      <h3>
+        <strong>3. Funções com Arrays de Structs</strong>
+      </h3>
+      <h4>
+        <strong>3.1 Passando arrays de structs como parâmetros</strong>
+      </h4>
       <p>Arrays de structs podem ser passados como parâmetros para funções:</p>
       <pre>
         <code>
@@ -137,16 +184,42 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Nesse exemplo, a função <code>imprimirAlunos</code> recebe um array de structs <code>Aluno</code> como parâmetro e imprime os dados de cada aluno.</p>
+      <p>
+        Nesse exemplo, a função <code>imprimirAlunos</code> recebe um array de
+        structs <code>Aluno</code> como parâmetro e imprime os dados de cada
+        aluno.
+      </p>
 
-      <h4><strong>3.2 Retornando arrays de structs como resultado</strong></h4>
-      <p><strong>Observação:</strong> Em C, não é possível retornar diretamente um array de structs como resultado de uma função. Isso porque o tamanho do array alocado na função chamadora pode ser diferente do tamanho esperado pela função que retorna o array.</p>
+      <h4>
+        <strong>3.2 Retornando arrays de structs como resultado</strong>
+      </h4>
+      <p>
+        <strong>Observação:</strong> Em C, não é possível retornar diretamente
+        um array de structs como resultado de uma função. Isso porque o tamanho
+        do array alocado na função chamadora pode ser diferente do tamanho
+        esperado pela função que retorna o array.
+      </p>
       <p>Para contornar essa limitação, existem duas abordagens comuns:</p>
       <ul>
-        <li><strong>Passar o array como parâmetro e modificá-lo dentro da função:</strong> A função recebe o array como parâmetro e modifica seus elementos diretamente.</li>
-        <li><strong>Retornar um ponteiro para o array alocado dentro da função:</strong> A função aloca memória para o array e retorna um ponteiro para o primeiro elemento. A responsabilidade de liberar a memória alocada é da função chamadora.</li>
+        <li>
+          <strong>
+            Passar o array como parâmetro e modificá-lo dentro da função:
+          </strong>{" "}
+          A função recebe o array como parâmetro e modifica seus elementos
+          diretamente.
+        </li>
+        <li>
+          <strong>
+            Retornar um ponteiro para o array alocado dentro da função:
+          </strong>{" "}
+          A função aloca memória para o array e retorna um ponteiro para o
+          primeiro elemento. A responsabilidade de liberar a memória alocada é
+          da função chamadora.
+        </li>
       </ul>
-      <p><strong>Exemplo (modificando o array dentro da função):</strong></p>
+      <p>
+        <strong>Exemplo (modificando o array dentro da função):</strong>
+      </p>
       <pre>
         <code>
           {`void ordenarAlunosPorNome(struct Aluno alunos[], int tamanho) {
@@ -175,11 +248,22 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Neste exemplo, a função <code>ordenarAlunosPorNome</code> recebe um array de structs <code>Aluno</code> e ordena seus elementos por nome (usando o algoritmo de bolha como exemplo). A função modifica o próprio array passado como parâmetro.</p>
+      <p>
+        Neste exemplo, a função <code>ordenarAlunosPorNome</code> recebe um
+        array de structs <code>Aluno</code> e ordena seus elementos por nome
+        (usando o algoritmo de bolha como exemplo). A função modifica o próprio
+        array passado como parâmetro.
+      </p>
 
-      <h3><strong>4. Exemplos Práticos</strong></h3>
-      <h4><strong>4.1 Criando um array de structs para armazenar alunos</strong></h4>
-      <p><strong>Exemplo utilizando a abordagem vista anteriormente:</strong></p>
+      <h3>
+        <strong>4. Exemplos Práticos</strong>
+      </h3>
+      <h4>
+        <strong>4.1 Criando um array de structs para armazenar alunos</strong>
+      </h4>
+      <p>
+        <strong>Exemplo utilizando a abordagem vista anteriormente:</strong>
+      </p>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -216,10 +300,21 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Este exemplo demonstra a criação e utilização de um array de structs <code>Aluno</code> para armazenar dados de alunos. A função <code>imprimirAlunos</code> é utilizada para exibir as informações de cada aluno.</p>
+      <p>
+        Este exemplo demonstra a criação e utilização de um array de structs{" "}
+        <code>Aluno</code> para armazenar dados de alunos. A função{" "}
+        <code>imprimirAlunos</code> é utilizada para exibir as informações de
+        cada aluno.
+      </p>
 
-      <h4><strong>4.2 Ordenando um array de structs por nome</strong></h4>
-      <p><strong>Exemplo utilizando a abordagem de modificar o array dentro da função:</strong></p>
+      <h4>
+        <strong>4.2 Ordenando um array de structs por nome</strong>
+      </h4>
+      <p>
+        <strong>
+          Exemplo utilizando a abordagem de modificar o array dentro da função:
+        </strong>
+      </p>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -247,15 +342,36 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Este exemplo demonstra a ordenação de um array de structs <code>Aluno</code> por nome utilizando a função <code>ordenarAlunosPorNome</code>. A função modifica diretamente o array recebido como parâmetro.</p>
+      <p>
+        Este exemplo demonstra a ordenação de um array de structs{" "}
+        <code>Aluno</code> por nome utilizando a função{" "}
+        <code>ordenarAlunosPorNome</code>. A função modifica diretamente o array
+        recebido como parâmetro.
+      </p>
 
-      <h4><strong>4.3 Buscando um elemento em um array de structs</strong></h4>
-      <p>Aqui, podemos implementar a busca por um elemento no array de structs utilizando duas abordagens:</p>
+      <h4>
+        <strong>4.3 Buscando um elemento em um array de structs</strong>
+      </h4>
+      <p>
+        Aqui, podemos implementar a busca por um elemento no array de structs
+        utilizando duas abordagens:
+      </p>
       <ol>
-        <li><strong>Busca sequencial:</strong> Percorre o array elemento por elemento comparando um valor específico com o membro desejado (por exemplo, a matrícula) até encontrar uma correspondência.</li>
-        <li><strong>Busca binária (para arrays ordenados):</strong> Se o array de structs já estiver ordenado por um determinado critério (como nome ou matrícula), podemos empregar a busca binária para localizar um elemento de forma mais eficiente.</li>
+        <li>
+          <strong>Busca sequencial:</strong> Percorre o array elemento por
+          elemento comparando um valor específico com o membro desejado (por
+          exemplo, a matrícula) até encontrar uma correspondência.
+        </li>
+        <li>
+          <strong>Busca binária (para arrays ordenados):</strong> Se o array de
+          structs já estiver ordenado por um determinado critério (como nome ou
+          matrícula), podemos empregar a busca binária para localizar um
+          elemento de forma mais eficiente.
+        </li>
       </ol>
-      <p><strong>Exemplo (busca sequencial por matrícula):</strong></p>
+      <p>
+        <strong>Exemplo (busca sequencial por matrícula):</strong>
+      </p>
       <pre>
         <code>
           {`#include <stdio.h>
@@ -292,10 +408,26 @@ int main() {
 }`}
         </code>
       </pre>
-      <p>Este exemplo demonstra a busca sequencial por um aluno no array de structs <code>alunos</code> utilizando a matrícula como critério. A função <code>buscarAlunoPorMatricula</code> percorre o array e retorna o índice do elemento encontrado ou -1 caso não encontre.</p>
-      <p><strong>Observação sobre a busca binária:</strong></p>
-      <p>A busca binária requer que o array de structs esteja previamente ordenado por um determinado critério. Implementar a busca binária envolve conceitos adicionais de ordenação e pesquisa binária que podem ser abordados em aulas posteriores.</p>
-      <p>Lembre-se que essas são apenas algumas aplicações básicas de arrays de structs em C. Existem muitas outras possibilidades de manipulação e organização de dados complexos utilizando esse recurso.</p>
+      <p>
+        Este exemplo demonstra a busca sequencial por um aluno no array de
+        structs <code>alunos</code> utilizando a matrícula como critério. A
+        função <code>buscarAlunoPorMatricula</code> percorre o array e retorna o
+        índice do elemento encontrado ou -1 caso não encontre.
+      </p>
+      <p>
+        <strong>Observação sobre a busca binária:</strong>
+      </p>
+      <p>
+        A busca binária requer que o array de structs esteja previamente
+        ordenado por um determinado critério. Implementar a busca binária
+        envolve conceitos adicionais de ordenação e pesquisa binária que podem
+        ser abordados em aulas posteriores.
+      </p>
+      <p>
+        Lembre-se que essas são apenas algumas aplicações básicas de arrays de
+        structs em C. Existem muitas outras possibilidades de manipulação e
+        organização de dados complexos utilizando esse recurso.
+      </p>
     </div>
   );
 };
