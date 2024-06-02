@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App.jsx";
 import "./index.css";
+
+// Adicione a lógica de redirecionamento
+const redirectPath = new URLSearchParams(window.location.search).get("p");
+if (redirectPath) {
+  window.history.replaceState(null, "", redirectPath);
+}
 
 import Variaveis from "./routes/fundamentos-algoritmos/Variaveis.jsx";
 import Expressoes from "./routes/fundamentos-algoritmos/Expressoes.jsx";
@@ -111,7 +116,7 @@ const router = createBrowserRouter([
             path: "reutilizacao-codigo",
             element: <ReutilizacaoCodigo />,
           },
-        ]
+        ],
       },
       {
         path: "var-comp-homogeneas",
@@ -161,6 +166,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
