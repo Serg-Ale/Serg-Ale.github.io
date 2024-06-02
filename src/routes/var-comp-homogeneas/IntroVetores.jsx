@@ -4,6 +4,14 @@ const IntroVetores = () => {
       <h1>Aula 1: Desvendando os Vetores em C</h1>
       <h3>Por: Sérgio Alexandre</h3>
 
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/mif0GLVTjD8?si=eWhAuk112q08eSFF"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
       <embed
         src="/public/homogeneas/intro-vet.pdf"
@@ -142,7 +150,6 @@ const IntroVetores = () => {
           </strong>
         </li>
       </ul>
-
     </div>
   );
 };

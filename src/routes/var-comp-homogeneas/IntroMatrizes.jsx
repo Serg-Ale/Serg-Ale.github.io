@@ -4,13 +4,22 @@ const IntroMatrizes = () => {
       <h2>Aula 3: Desvendando as Matrizes em C</h2>
       <h3>Por: Sérgio Alexandre</h3>
 
+
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/PWJjcM-ns6g?si=2a4G6SFT5VS73EYN"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
       <embed
         src="/public/homogeneas/intro-mat.pdf"
         width="1200"
         height="700"
         type="application/pdf"
       />
-
 
       <h3>Objetivo:</h3>
       <ul>
