@@ -20,181 +20,115 @@ const DecisaoFinal = () => {
         type="application/pdf"
       />
 
-      <h2 id="objetivos">
-        <strong>Objetivos:</strong>
-      </h2>
+      <h2>Objetivos</h2>
       <ul>
-        <li>Apresentar os operadores aritméticos em C.</li>
-        <li>Demonstrar a precedência dos operadores aritméticos.</li>
-        <li>
-          Construir expressões aritméticas complexas com múltiplos operadores e
-          parênteses.
-        </li>
-        <li>Explicar os operadores relacionais em C.</li>
-        <li>Compor expressões relacionais para comparar valores.</li>
-        <li>Descrever os operadores lógicos em C.</li>
-        <li>
-          Combinar expressões lógicas com operadores lógicos para criar
-          condições complexas.
-        </li>
-        <li>
-          Utilizar tabelas-verdade para analisar o comportamento dos operadores
-          lógicos.
-        </li>
-        <li>
-          Praticar a utilização de expressões aritméticas, relacionais e lógicas
-          em um exemplo prático.
-        </li>
+        <li>Reforçar os conceitos de estruturas de decisão em C.</li>
+        <li>Praticar a resolução de exercícios envolvendo <code>if-else</code>, <code>if-else-if</code> e <code>switch</code>.</li>
+        <li>Concluir o tópico de estruturas de decisão, destacando sua importância e aplicabilidade.</li>
       </ul>
 
-      <h2 id="parte-1-expressoes-aritmeticas">
-        <strong>Parte 1: Expressões Aritméticas</strong>
-      </h2>
-      <h3 id="operadores-aritmeticos-em-c">
-        <strong>1.1 Operadores Aritméticos em C:</strong>
-      </h3>
+      <h2>Parte 1: Exercícios Práticos</h2>
+
+      <h3>1.1 Exercício 1</h3>
+      <p>Escreva um programa em C que determine se um número é positivo, negativo ou zero.</p>
+      <p>Dica: Use a estrutura <code>if-else</code>.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int numero;
+
+        printf("Digite um número: ");
+        scanf("%d", &numero);
+
+        if (numero > 0) {
+            printf("O número é positivo.\\n");
+        } else if (numero < 0) {
+            printf("O número é negativo.\\n");
+        } else {
+            printf("O número é zero.\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          Os operadores aritméticos em C são:
-          <ul>
-            <li>
-              Adição (<code>+</code>)
-            </li>
-            <li>
-              Subtração (<code>-</code>)
-            </li>
-            <li>
-              Multiplicação (<code>*</code>)
-            </li>
-            <li>
-              Divisão (<code>/</code>)
-            </li>
-            <li>
-              Módulo (<code>%</code>)
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> O código utiliza a estrutura <code>if-else</code> para verificar se o número digitado é positivo, negativo ou zero.</li>
+        <li><strong>Prático:</strong> Se o número for maior que zero, ele é positivo. Se for menor que zero, é negativo. Caso contrário, é zero.</li>
       </ul>
 
-      <h3 id="precedencia-de-operadores-aritmeticos">
-        <strong>1.2 Precedência de Operadores Aritméticos:</strong>
-      </h3>
+      <h3>1.2 Exercício 2</h3>
+      <p>Escreva um programa em C que determine o maior de três números.</p>
+      <p>Dica: Utilize a estrutura <code>if-else-if</code>.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int num1, num2, num3;
+
+        printf("Digite três números: ");
+        scanf("%d %d %d", &num1, &num2, &num3);
+
+        if (num1 >= num2 && num1 >= num3) {
+            printf("O maior número é: %d\\n", num1);
+        } else if (num2 >= num1 && num2 >= num3) {
+            printf("O maior número é: %d\\n", num2);
+        } else {
+            printf("O maior número é: %d\\n", num3);
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A ordem de avaliação das expressões aritméticas segue a precedência
-          dos operadores:
-          <ul>
-            <li>
-              <strong>1. Multiplicação e Divisão</strong>
-            </li>
-            <li>
-              <strong>2. Adição e Subtração</strong>
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> O programa compara os três números para determinar qual é o maior, utilizando a estrutura <code>if-else-if</code>.</li>
+        <li><strong>Prático:</strong> O programa verifica se o primeiro número é maior que os outros dois. Se sim, ele é o maior. Caso contrário, compara o segundo e o terceiro número para determinar o maior.</li>
       </ul>
 
-      <h3 id="expressoes-aritmeticas-complexas">
-        <strong>1.3 Expressões Aritméticas Complexas:</strong>
-      </h3>
+      <h3>1.3 Exercício 3</h3>
+      <p>Escreva um programa em C que determine se um caractere é uma vogal ou uma consoante.</p>
+      <p>Dica: Utilize a estrutura <code>switch</code>.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        char caractere;
+
+        printf("Digite um caractere: ");
+        scanf(" %c", &caractere);
+
+        switch (caractere) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                printf("O caractere %c é uma vogal.\\n", caractere);
+                break;
+            default:
+                printf("O caractere %c é uma consoante.\\n", caractere);
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          O uso de parênteses permite alterar a ordem de avaliação das
-          expressões:
-          <pre>
-            <code>(2 + 3) * 4 // Resultado: 20</code>
-          </pre>
-          <pre>
-            <code> 2 + 3 * 4 // Resultado: 14</code>
-          </pre>
-        </li>
+        <li><strong>Teórico:</strong> O programa usa a estrutura <code>switch</code> para determinar se um caractere é uma vogal ou uma consoante.</li>
+        <li><strong>Prático:</strong> O programa verifica se o caractere fornecido está entre as vogais (a, e, i, o, u ou suas versões maiúsculas). Se sim, é uma vogal. Caso contrário, é uma consoante.</li>
       </ul>
 
-      <h2 id="parte-2-expressoes-relacionais">
-        <strong>Parte 2: Expressões Relacionais</strong>
-      </h2>
-      <h3 id="operadores-relacionais-em-c">
-        <strong>2.1 Operadores Relacionais em C:</strong>
-      </h3>
-      <ul>
-        <li>
-          Os operadores relacionais em C são:
-          <ul>
-            <li>
-              Menor que (<code>&lt;</code>)
-            </li>
-            <li>
-              Maior que (<code>&gt;</code>)
-            </li>
-            <li>
-              Menor ou igual que (<code>&lt;=</code>)
-            </li>
-            <li>
-              Maior ou igual que (<code>&gt;=</code>)
-            </li>
-            <li>
-              Igual a (<code>==</code>)
-            </li>
-            <li>
-              Diferente de (<code>!=</code>)
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <h2>Parte 2: Conclusão</h2>
 
-      <h3 id="expressoes-relacionais-complexas">
-        <strong>2.2 Expressões Relacionais Complexas:</strong>
-      </h3>
-      <ul>
-        <li>
-          É possível combinar operadores relacionais em uma única expressão:
-          <pre>
-            <code>
-              x &lt; y &amp;&amp; z &gt; 10 // Verdadeiro se x for menor que y e
-              z for maior que 10
-            </code>
-          </pre>
-        </li>
-      </ul>
+      <p>As estruturas de decisão são fundamentais na programação, pois permitem que os programas tomem decisões com base em condições específicas. Através do uso de <code>if-else</code>, <code>if-else-if</code> e <code>switch</code>, os programadores podem criar lógicas complexas para lidar com uma variedade de situações.</p>
 
-      <h2 id="parte-3-expressoes-logicas">
-        <strong>Parte 3: Expressões Lógicas</strong>
-      </h2>
-      <h3 id="operadores-logicos-em-c">
-        <strong>3.1 Operadores Lógicos em C:</strong>
-      </h3>
-      <ul>
-        <li>
-          Os operadores lógicos em C são:
-          <ul>
-            <li>
-              E (<code>&amp;&amp;</code>)
-            </li>
-            <li>
-              Ou (<code>||</code>)
-            </li>
-            <li>
-              Não (<code>!</code>)
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <p>É importante entender quando usar cada uma dessas estruturas e como combiná-las para obter o comportamento desejado do programa. Com prática e experiência, os programadores podem desenvolver habilidades sólidas em tomada de decisão, melhorando a eficiência e a robustez de seus códigos.</p>
 
-      <h2 id="conclusao">
-        <strong>Conclusão:</strong>
-      </h2>
-      <p>
-        Nesta aula, você aprendeu sobre operadores aritméticos, relacionais e
-        lógicos em C. Você viu como utilizar a precedência dos operadores para
-        criar expressões aritméticas complexas e como combinar operadores
-        relacionais e lógicos para compor expressões complexas. O exemplo
-        prático e as atividades propostas permitiram que você colocasse esses
-        conceitos em prática.
-      </p>
-      <p>
-        <strong>Lembre-se:</strong> A prática contínua é fundamental para
-        consolidar o seu aprendizado de C.
-      </p>
+      <p>Com isso, concluímos o tópico de estruturas de decisão em C. Continue praticando e explorando novos conceitos para aprimorar suas habilidades de programação!</p>
     </div>
   );
 };

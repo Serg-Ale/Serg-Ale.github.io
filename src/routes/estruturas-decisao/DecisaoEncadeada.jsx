@@ -19,158 +19,209 @@ const DecisaoEncadeada = () => {
         height="700"
         type="application/pdf"
       />
+      
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Apresentar as estruturas de decisão aninhadas na linguagem C.</li>
+        <li>Demonstrar como utilizar a estrutura <code>if-else-if</code> para decisões múltiplas.</li>
+        <li>Ensinar a usar a estrutura <code>switch</code> para simplificar decisões com múltiplos casos.</li>
+        <li>Praticar a escrita de código C utilizando estruturas de decisão aninhadas.</li>
+      </ul>
 
-      <h2 id="objetivos">
-        <strong>Objetivos:</strong>
-      </h2>
+      <h2>Parte 1: Estruturas de Decisão Aninhadas</h2>
+
+      <h3>1.1 Estruturas de Decisão Aninhadas</h3>
       <ul>
-        <li>
-          Apresentar a função <code>scanf()</code> para leitura de dados em C.
-        </li>
-        <li>
-          Demonstrar a formatação de entrada de dados com <code>scanf()</code>.
-        </li>
-        <li>
-          Construir exemplos de leitura de diferentes tipos de dados com{" "}
-          <code>scanf()</code>.
-        </li>
-        <li>
-          Explicar a função <code>printf()</code> para impressão de dados em C.
-        </li>
-        <li>
-          Demonstrar a formatação de saída de dados com <code>printf()</code>.
-        </li>
-        <li>
-          Criar exemplos de impressão de diferentes tipos de dados com{" "}
-          <code>printf()</code>.
-        </li>
-        <li>
-          Praticar a utilização das funções <code>scanf()</code> e{" "}
-          <code>printf()</code> em um exemplo prático.
-        </li>
+        <li>As estruturas de decisão aninhadas permitem que um programa tome diferentes caminhos de execução com base em múltiplas condições específicas.</li>
+        <li>Elas são úteis quando há várias condições a serem verificadas em sequência.</li>
+        <li>Utilizar decisões aninhadas torna o código mais claro e organizado, facilitando a leitura e a manutenção.</li>
       </ul>
-      <h2 id="parte-1-entrada-de-dados">
-        <strong>Parte 1: Entrada de Dados</strong>
-      </h2>
-      <h3 id="funcao-scanf-para-leitura-de-dados">
-        <strong>
-          1.1 Função <code>scanf()</code> para Leitura de Dados:
-        </strong>
-      </h3>
+
+      <h3>1.2 Estruturas de Decisão Múltiplas (if-else-if)</h3>
       <ul>
-        <li>
-          A função <code>scanf()</code> é uma função de biblioteca padrão em C
-          que permite ler dados da entrada padrão (geralmente o teclado).
-        </li>
-        <li>
-          A função retorna o número de itens de dados que foram lidos com
-          sucesso.
-        </li>
+        <li>A estrutura de decisão múltipla utiliza a instrução <code>if-else-if</code> para verificar várias condições em sequência.</li>
       </ul>
-      <h3 id="formatacao-de-entrada-de-dados-com-scanf">
-        <strong>
-          1.2 Formatação de Entrada de Dados com <code>scanf()</code>:
-        </strong>
-      </h3>
+
+      <h4>Exemplo 1:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int nota = 85;
+
+        if (nota >= 90) {
+            printf("A\\n");
+        } else if (nota >= 80) {
+            printf("B\\n");
+        } else if (nota >= 70) {
+            printf("C\\n");
+        } else if (nota >= 60) {
+            printf("D\\n");
+        } else {
+            printf("F\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A sintaxe da função <code>scanf()</code> inclui especificadores de
-          formato que indicam o tipo de dado a ser lido:
-          <ul>
-            <li>
-              <code>%d</code>: inteiro
-            </li>
-            <li>
-              <code>%f</code>: flutuante
-            </li>
-            <li>
-              <code>%c</code>: caractere
-            </li>
-            <li>
-              <code>%s</code>: string
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> A estrutura <code>if-else-if</code> permite verificar várias condições em sequência e executar blocos de código diferentes com base na condição que for verdadeira primeiro.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>nota</code> é comparada com diferentes valores para determinar a letra correspondente à nota. Dependendo do valor de <code>nota</code>, a mensagem apropriada (A, B, C, D ou F) será impressa.</li>
       </ul>
-      <h2 id="parte-2-saida-de-dados">
-        <strong>Parte 2: Saída de Dados</strong>
-      </h2>
-      <h3 id="funcao-printf-para-impressao-de-dados">
-        <strong>
-          2.1 Função <code>printf()</code> para Impressão de Dados:
-        </strong>
-      </h3>
+
+      <h4>Exemplo 2:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int idade = 25;
+
+        if (idade < 13) {
+            printf("Criança\\n");
+        } else if (idade < 18) {
+            printf("Adolescente\\n");
+        } else if (idade < 60) {
+            printf("Adulto\\n");
+        } else {
+            printf("Idoso\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A função <code>printf()</code> é uma função de biblioteca padrão em C
-          que permite imprimir dados na saída padrão (geralmente o console).
-        </li>
-        <li>A função retorna o número de caracteres que foram impressos.</li>
+        <li><strong>Teórico:</strong> A estrutura <code>if-else-if</code> avalia múltiplas condições de forma sequencial até encontrar uma verdadeira.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>idade</code> é usada para determinar a faixa etária. Dependendo do valor de <code>idade</code>, a mensagem correspondente (Criança, Adolescente, Adulto ou Idoso) será impressa.</li>
       </ul>
-      <h3 id="formatacao-de-saida-de-dados-com-printf">
-        <strong>
-          2.2 Formatação de Saída de Dados com <code>printf()</code>:
-        </strong>
-      </h3>
+
+      <h4>Exemplo 3:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int temperatura = 15;
+
+        if (temperatura < 0) {
+            printf("Muito frio\\n");
+        } else if (temperatura < 10) {
+            printf("Frio\\n");
+        } else if (temperatura < 20) {
+            printf("Agradável\\n");
+        } else if (temperatura < 30) {
+            printf("Quente\\n");
+        } else {
+            printf("Muito quente\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A sintaxe da função <code>printf()</code> inclui especificadores de
-          formato que indicam o tipo de dado a ser impresso:
-          <ul>
-            <li>
-              <code>%d</code>: inteiro
-            </li>
-            <li>
-              <code>%f</code>: flutuante
-            </li>
-            <li>
-              <code>%c</code>: caractere
-            </li>
-            <li>
-              <code>%s</code>: string
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> O <code>if-else-if</code> permite definir várias condições que são avaliadas de forma sequencial.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>temperatura</code> é usada para determinar a sensação térmica. Dependendo do valor de <code>temperatura</code>, a mensagem correspondente (Muito frio, Frio, Agradável, Quente ou Muito quente) será impressa.</li>
       </ul>
-      <h2 id="exemplo-pratico">
-        <strong>Exemplo Prático:</strong>
-      </h2>
-      <p>
-        <strong>Objetivo:</strong> Ler o nome e a idade do usuário e imprimi-los
-        na tela formatados.
-      </p>
-      <h2 id="atividade-proposta">
-        <strong>Atividade Proposta:</strong>
-      </h2>
-      <ol>
-        <li>
-          Modifique o programa para imprimir a idade formatada como ``Você tem X
-          anos``.
-        </li>
-        <li>
-          Escreva um programa que leia dois números e imprima a soma, a
-          diferença, o produto e o quociente desses números.
-        </li>
-        <li>
-          Escreva um programa que leia a temperatura em Celsius e converta para
-          Fahrenheit (F = (C * 9/5) + 32).
-        </li>
-      </ol>
-      <h2 id="conclusao">
-        <strong>Conclusão:</strong>
-      </h2>
-      <p>
-        Nesta aula, você aprendeu como realizar a entrada e saída de dados em
-        programas em C utilizando as funções <code>scanf()</code> e{" "}
-        <code>printf()</code>. O exemplo prático demonstrou como utilizar essas
-        funções para interagir com o usuário e exibir informações formatadas na
-        tela.
-      </p>
-      <p>
-        <strong>Lembre-se:</strong> A formatação de dados é importante para
-        deixar a saída do programa mais organizada e legível. É importante
-        escolher os especificadores de formato adequados para cada tipo de dado.
-      </p>
+
+      <h3>1.3 Estrutura de Decisão Switch</h3>
+      <ul>
+        <li>A estrutura <code>switch</code> simplifica a verificação de múltiplas condições com base no valor de uma única variável.</li>
+        <li>O <code>switch</code> é especialmente útil quando há muitos casos possíveis para uma variável.</li>
+      </ul>
+
+      <h4>Exemplo 1:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int dia = 3;
+
+        switch (dia) {
+            case 1:
+                printf("Domingo\\n");
+                break;
+            case 2:
+                printf("Segunda\\n");
+                break;
+            case 3:
+                printf("Terça\\n");
+                break;
+            case 4:
+                printf("Quarta\\n");
+                break;
+            case 5:
+                printf("Quinta\\n");
+                break;
+            case 6:
+                printf("Sexta\\n");
+                break;
+            case 7:
+                printf("Sábado\\n");
+                break;
+            default:
+                printf("Dia inválido\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
+      <ul>
+        <li><strong>Teórico:</strong> A estrutura <code>switch</code> avalia o valor de uma variável e executa o bloco de código correspondente ao caso que corresponde ao valor.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>dia</code> determina qual dia da semana será impresso. Dependendo do valor de <code>dia</code>, a mensagem apropriada será impressa.</li>
+      </ul>
+
+      <h4>Exemplo 2:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int opcao = 2;
+
+        switch (opcao) {
+            case 1:
+                printf("Opção 1 selecionada\\n");
+                break;
+            case 2:
+                printf("Opção 2 selecionada\\n");
+                break;
+            case 3:
+                printf("Opção 3 selecionada\\n");
+                break;
+            default:
+                printf("Opção inválida\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
+      <ul>
+        <li><strong>Teórico:</strong> A estrutura <code>switch</code> é útil para lidar com múltiplos valores de uma variável de forma clara e organizada.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>opcao</code> determina a mensagem a ser impressa. Dependendo do valor de <code>opcao</code>, a mensagem correspondente será impressa.</li>
+      </ul>
+
+      <h4>Exemplo 3:</h4>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int hora = 15;
+
+        if (hora >= 0 && hora < 12) {
+            printf("Bom dia!\\n");
+        } else if (hora >= 12 && hora < 18) {
+            printf("Boa tarde!\\n");
+        } else if (hora >= 18 && hora < 24) {
+            printf("Boa noite!\\n");
+        } else {
+            printf("Hora inválida!\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
+      <ul>
+        <li><strong>Teórico:</strong> A estrutura <code>if-else-if</code> pode ser utilizada para tomar decisões com base em múltiplas condições.</li>
+        <li><strong>Prático:</strong> No exemplo acima, a variável <code>hora</code> é utilizada para determinar a saudação apropriada. Dependendo do valor de <code>hora</code>, será exibida uma mensagem de bom dia, boa tarde ou boa noite.</li>
+      </ul>
+
     </div>
   );
 };

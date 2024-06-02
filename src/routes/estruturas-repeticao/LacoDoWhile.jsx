@@ -20,181 +20,123 @@ const LacoDoWhile = () => {
         type="application/pdf"
       />
 
-      <h2 id="objetivos">
-        <strong>Objetivos:</strong>
-      </h2>
+      <h2>Objetivos</h2>
       <ul>
-        <li>Apresentar os operadores aritméticos em C.</li>
-        <li>Demonstrar a precedência dos operadores aritméticos.</li>
-        <li>
-          Construir expressões aritméticas complexas com múltiplos operadores e
-          parênteses.
-        </li>
-        <li>Explicar os operadores relacionais em C.</li>
-        <li>Compor expressões relacionais para comparar valores.</li>
-        <li>Descrever os operadores lógicos em C.</li>
-        <li>
-          Combinar expressões lógicas com operadores lógicos para criar
-          condições complexas.
-        </li>
-        <li>
-          Utilizar tabelas-verdade para analisar o comportamento dos operadores
-          lógicos.
-        </li>
-        <li>
-          Praticar a utilização de expressões aritméticas, relacionais e lógicas
-          em um exemplo prático.
-        </li>
+        <li>Introduzir o conceito de estrutura de repetição com o laço <code>do-while</code>.</li>
+        <li>Explorar a sintaxe e o funcionamento do laço <code>do-while</code> em C.</li>
+        <li>Praticar a utilização do laço <code>do-while</code> em situações diversas.</li>
       </ul>
 
-      <h2 id="parte-1-expressoes-aritmeticas">
-        <strong>Parte 1: Expressões Aritméticas</strong>
-      </h2>
-      <h3 id="operadores-aritmeticos-em-c">
-        <strong>1.1 Operadores Aritméticos em C:</strong>
-      </h3>
+      <h2>Parte 1: Introdução ao Laço Do-While</h2>
+
+      <h3>1.1 O que é o Laço Do-While?</h3>
       <ul>
-        <li>
-          Os operadores aritméticos em C são:
-          <ul>
-            <li>
-              Adição (<code>+</code>)
-            </li>
-            <li>
-              Subtração (<code>-</code>)
-            </li>
-            <li>
-              Multiplicação (<code>*</code>)
-            </li>
-            <li>
-              Divisão (<code>/</code>)
-            </li>
-            <li>
-              Módulo (<code>%</code>)
-            </li>
-          </ul>
-        </li>
+        <li>O laço <code>do-while</code> é uma estrutura de controle de repetição semelhante ao <code>while</code>, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo que a condição seja falsa desde o início.</li>
       </ul>
 
-      <h3 id="precedencia-de-operadores-aritmeticos">
-        <strong>1.2 Precedência de Operadores Aritméticos:</strong>
-      </h3>
+      <h3>1.2 Sintaxe do Laço Do-While</h3>
       <ul>
-        <li>
-          A ordem de avaliação das expressões aritméticas segue a precedência
-          dos operadores:
-          <ul>
-            <li>
-              <strong>1. Multiplicação e Divisão</strong>
-            </li>
-            <li>
-              <strong>2. Adição e Subtração</strong>
-            </li>
-          </ul>
-        </li>
+        <li>A sintaxe básica do laço <code>do-while</code> em C é a seguinte:</li>
+      </ul>
+      <pre>
+        <code>{`do {
+        // código a ser repetido
+    } while (condição);`}</code>
+      </pre>
+
+      <h2>Parte 2: Exemplos de Utilização</h2>
+
+      <h3>2.1 Exemplo 1: Contagem Progressiva</h3>
+      <p>Escreva um programa em C que realize uma contagem progressiva de 1 até 10 usando o laço <code>do-while</code>.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int contador = 1;
+
+        do {
+            printf("%d\\n", contador);
+            contador++;
+        } while (contador <= 10);
+
+        return 0;
+    }`}</code>
+      </pre>
+      <ul>
+        <li><strong>Teórico:</strong> Este exemplo demonstra como usar o laço <code>do-while</code> para realizar uma contagem progressiva de 1 até 10.</li>
+        <li><strong>Prático:</strong> O programa inicia um contador em 1 e incrementa seu valor a cada iteração, imprimindo o valor atual do contador até que o valor chegue a 10.</li>
       </ul>
 
-      <h3 id="expressoes-aritmeticas-complexas">
-        <strong>1.3 Expressões Aritméticas Complexas:</strong>
-      </h3>
+      <h3>2.2 Exemplo 2: Leitura de Valores</h3>
+      <p>Escreva um programa em C que solicite ao usuário que insira números inteiros positivos, e continue solicitando até que um valor negativo seja inserido.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int numero;
+
+        do {
+            printf("Digite um número positivo (ou um negativo para sair): ");
+            scanf("%d", &numero);
+
+            if (numero >= 0) {
+                printf("Número inserido: %d\\n", numero);
+            }
+        } while (numero >= 0);
+
+        printf("Programa encerrado.\\n");
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          O uso de parênteses permite alterar a ordem de avaliação das
-          expressões:
-          <pre>
-            <code>(2 + 3) * 4 // Resultado: 20</code>
-          </pre>
-          <pre>
-            <code> 2 + 3 * 4 // Resultado: 14</code>
-          </pre>
-        </li>
+        <li><strong>Teórico:</strong> Neste exemplo, utilizamos o laço <code>do-while</code> para solicitar ao usuário a inserção de números inteiros positivos até que um número negativo seja inserido.</li>
+        <li><strong>Prático:</strong> O programa solicita repetidamente ao usuário que insira um número. Se o número inserido for positivo, ele é exibido na tela. O laço continua até que um número negativo seja inserido, momento em que o programa é encerrado.</li>
       </ul>
 
-      <h2 id="parte-2-expressoes-relacionais">
-        <strong>Parte 2: Expressões Relacionais</strong>
-      </h2>
-      <h3 id="operadores-relacionais-em-c">
-        <strong>2.1 Operadores Relacionais em C:</strong>
-      </h3>
+      <h3>2.3 Exemplo 3: Cálculo de Média</h3>
+      <p>Escreva um programa em C que calcule a média de uma série de notas fornecidas pelo usuário. O programa deve continuar solicitando notas até que um valor negativo seja inserido para indicar o fim da entrada de dados.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int nota;
+        int totalNotas = 0;
+        int contador = 0;
+        float media;
+
+        do {
+            printf("Digite a nota (ou um valor negativo para encerrar): ");
+            scanf("%d", &nota);
+
+            if (nota >= 0) {
+                totalNotas += nota;
+                contador++;
+            }
+        } while (nota >= 0);
+
+        if (contador > 0) {
+            media = (float)totalNotas / contador;
+            printf("Média das notas: %.2f\\n", media);
+        } else {
+            printf("Nenhuma nota inserida.\\n");
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          Os operadores relacionais em C são:
-          <ul>
-            <li>
-              Menor que (<code>&lt;</code>)
-            </li>
-            <li>
-              Maior que (<code>&gt;</code>)
-            </li>
-            <li>
-              Menor ou igual que (<code>&lt;=</code>)
-            </li>
-            <li>
-              Maior ou igual que (<code>&gt;=</code>)
-            </li>
-            <li>
-              Igual a (<code>==</code>)
-            </li>
-            <li>
-              Diferente de (<code>!=</code>)
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> Neste exemplo, usamos o laço <code>do-while</code> para calcular a média de uma série de notas fornecidas pelo usuário.</li>
+        <li><strong>Prático:</strong> O programa solicita repetidamente ao usuário que insira uma nota. As notas são somadas e o número total de notas é contado. Quando um valor negativo é inserido, o programa calcula a média das notas inseridas e exibe o resultado.</li>
       </ul>
 
-      <h3 id="expressoes-relacionais-complexas">
-        <strong>2.2 Expressões Relacionais Complexas:</strong>
-      </h3>
-      <ul>
-        <li>
-          É possível combinar operadores relacionais em uma única expressão:
-          <pre>
-            <code>
-              x &lt; y &amp;&amp; z &gt; 10 // Verdadeiro se x for menor que y e
-              z for maior que 10
-            </code>
-          </pre>
-        </li>
-      </ul>
+      <h2>Parte 3: Conclusão</h2>
 
-      <h2 id="parte-3-expressoes-logicas">
-        <strong>Parte 3: Expressões Lógicas</strong>
-      </h2>
-      <h3 id="operadores-logicos-em-c">
-        <strong>3.1 Operadores Lógicos em C:</strong>
-      </h3>
       <ul>
-        <li>
-          Os operadores lógicos em C são:
-          <ul>
-            <li>
-              E (<code>&amp;&amp;</code>)
-            </li>
-            <li>
-              Ou (<code>||</code>)
-            </li>
-            <li>
-              Não (<code>!</code>)
-            </li>
-          </ul>
-        </li>
+        <li>O laço <code>do-while</code> é uma variação do laço <code>while</code> que garante que o bloco de código seja executado pelo menos uma vez, mesmo que a condição seja falsa desde o início.</li>
+        <li>Ele é útil em situações onde é necessário executar um bloco de código antes de verificar a condição de repetição.</li>
+        <li>Com o entendimento do laço <code>do-while</code>, os programadores têm mais uma ferramenta para criar programas robustos e flexíveis em C.</li>
       </ul>
-
-      <h2 id="conclusao">
-        <strong>Conclusão:</strong>
-      </h2>
-      <p>
-        Nesta aula, você aprendeu sobre operadores aritméticos, relacionais e
-        lógicos em C. Você viu como utilizar a precedência dos operadores para
-        criar expressões aritméticas complexas e como combinar operadores
-        relacionais e lógicos para compor expressões complexas. O exemplo
-        prático e as atividades propostas permitiram que você colocasse esses
-        conceitos em prática.
-      </p>
-      <p>
-        <strong>Lembre-se:</strong> A prática contínua é fundamental para
-        consolidar o seu aprendizado de C.
-      </p>
     </div>
   );
 };

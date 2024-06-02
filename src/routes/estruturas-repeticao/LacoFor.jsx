@@ -20,157 +20,102 @@ const LacoFor = () => {
         type="application/pdf"
       />
 
-      <h2 id="objetivos">
-        <strong>Objetivos:</strong>
-      </h2>
+      <h2>Objetivos</h2>
       <ul>
-        <li>
-          Apresentar a função <code>scanf()</code> para leitura de dados em C.
-        </li>
-        <li>
-          Demonstrar a formatação de entrada de dados com <code>scanf()</code>.
-        </li>
-        <li>
-          Construir exemplos de leitura de diferentes tipos de dados com{" "}
-          <code>scanf()</code>.
-        </li>
-        <li>
-          Explicar a função <code>printf()</code> para impressão de dados em C.
-        </li>
-        <li>
-          Demonstrar a formatação de saída de dados com <code>printf()</code>.
-        </li>
-        <li>
-          Criar exemplos de impressão de diferentes tipos de dados com{" "}
-          <code>printf()</code>.
-        </li>
-        <li>
-          Praticar a utilização das funções <code>scanf()</code> e{" "}
-          <code>printf()</code> em um exemplo prático.
-        </li>
+        <li>Apresentar o conceito de estrutura de repetição com o laço <code>for</code>.</li>
+        <li>Explorar a sintaxe e o funcionamento do laço <code>for</code> em C.</li>
+        <li>Praticar a utilização do laço <code>for</code> em situações diversas.</li>
       </ul>
-      <h2 id="parte-1-entrada-de-dados">
-        <strong>Parte 1: Entrada de Dados</strong>
-      </h2>
-      <h3 id="funcao-scanf-para-leitura-de-dados">
-        <strong>
-          1.1 Função <code>scanf()</code> para Leitura de Dados:
-        </strong>
-      </h3>
+
+      <h2>Parte 1: Introdução ao Laço For</h2>
+
+      <h3>1.1 O que é o Laço For?</h3>
       <ul>
-        <li>
-          A função <code>scanf()</code> é uma função de biblioteca padrão em C
-          que permite ler dados da entrada padrão (geralmente o teclado).
-        </li>
-        <li>
-          A função retorna o número de itens de dados que foram lidos com
-          sucesso.
-        </li>
+        <li>O laço <code>for</code> é uma estrutura de controle de repetição que permite executar um bloco de código um número específico de vezes.</li>
       </ul>
-      <h3 id="formatacao-de-entrada-de-dados-com-scanf">
-        <strong>
-          1.2 Formatação de Entrada de Dados com <code>scanf()</code>:
-        </strong>
-      </h3>
+
+      <h3>1.2 Sintaxe do Laço For</h3>
       <ul>
-        <li>
-          A sintaxe da função <code>scanf()</code> inclui especificadores de
-          formato que indicam o tipo de dado a ser lido:
-          <ul>
-            <li>
-              <code>%d</code>: inteiro
-            </li>
-            <li>
-              <code>%f</code>: flutuante
-            </li>
-            <li>
-              <code>%c</code>: caractere
-            </li>
-            <li>
-              <code>%s</code>: string
-            </li>
-          </ul>
-        </li>
+        <li>A sintaxe básica do laço <code>for</code> em C é a seguinte:</li>
       </ul>
-      <h2 id="parte-2-saida-de-dados">
-        <strong>Parte 2: Saída de Dados</strong>
-      </h2>
-      <h3 id="funcao-printf-para-impressao-de-dados">
-        <strong>
-          2.1 Função <code>printf()</code> para Impressão de Dados:
-        </strong>
-      </h3>
+      <pre>
+        <code>{`for (inicialização; condição; incremento/decremento) {
+        // código a ser repetido
+    }`}</code>
+      </pre>
+
+      <h2>Parte 2: Exemplos de Utilização</h2>
+
+      <h3>2.1 Exemplo 1: Contagem Progressiva</h3>
+      <p>Escreva um programa em C que realize uma contagem progressiva de 1 até 10 usando o laço <code>for</code>.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        for (int i = 1; i <= 10; i++) {
+            printf("%d\\n", i);
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A função <code>printf()</code> é uma função de biblioteca padrão em C
-          que permite imprimir dados na saída padrão (geralmente o console).
-        </li>
-        <li>A função retorna o número de caracteres que foram impressos.</li>
+        <li><strong>Teórico:</strong> Este exemplo demonstra como usar o laço <code>for</code> para realizar uma contagem progressiva de 1 até 10.</li>
+        <li><strong>Prático:</strong> O programa utiliza uma variável de controle <code>i</code> para iterar de 1 até 10, imprimindo o valor atual de <code>i</code> em cada iteração.</li>
       </ul>
-      <h3 id="formatacao-de-saida-de-dados-com-printf">
-        <strong>
-          2.2 Formatação de Saída de Dados com <code>printf()</code>:
-        </strong>
-      </h3>
+
+      <h3>2.2 Exemplo 2: Tabuada</h3>
+      <p>Escreva um programa em C que exiba a tabuada de multiplicação de um número fornecido pelo usuário.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int numero;
+
+        printf("Digite um número para ver sua tabuada: ");
+        scanf("%d", &numero);
+
+        for (int i = 1; i <= 10; i++) {
+            printf("%d x %d = %d\\n", numero, i, numero * i);
+        }
+
+        return 0;
+    }`}</code>
+      </pre>
       <ul>
-        <li>
-          A sintaxe da função <code>printf()</code> inclui especificadores de
-          formato que indicam o tipo de dado a ser impresso:
-          <ul>
-            <li>
-              <code>%d</code>: inteiro
-            </li>
-            <li>
-              <code>%f</code>: flutuante
-            </li>
-            <li>
-              <code>%c</code>: caractere
-            </li>
-            <li>
-              <code>%s</code>: string
-            </li>
-          </ul>
-        </li>
+        <li><strong>Teórico:</strong> Neste exemplo, utilizamos o laço <code>for</code> para exibir a tabuada de multiplicação de um número.</li>
+        <li><strong>Prático:</strong> O programa solicita ao usuário um número e, em seguida, utiliza um laço <code>for</code> para iterar de 1 a 10 e exibir a multiplicação do número fornecido pelo usuário pelo valor de <code>i</code>.</li>
       </ul>
-      <h2 id="exemplo-pratico">
-        <strong>Exemplo Prático:</strong>
-      </h2>
-      <p>
-        <strong>Objetivo:</strong> Ler o nome e a idade do usuário e imprimi-los
-        na tela formatados.
-      </p>
-      <h2 id="atividade-proposta">
-        <strong>Atividade Proposta:</strong>
-      </h2>
-      <ol>
-        <li>
-          Modifique o programa para imprimir a idade formatada como ``Você tem X
-          anos``.
-        </li>
-        <li>
-          Escreva um programa que leia dois números e imprima a soma, a
-          diferença, o produto e o quociente desses números.
-        </li>
-        <li>
-          Escreva um programa que leia a temperatura em Celsius e converta para
-          Fahrenheit (F = (C * 9/5) + 32).
-        </li>
-      </ol>
-      <h2 id="conclusao">
-        <strong>Conclusão:</strong>
-      </h2>
-      <p>
-        Nesta aula, você aprendeu como realizar a entrada e saída de dados em
-        programas em C utilizando as funções <code>scanf()</code> e{" "}
-        <code>printf()</code>. O exemplo prático demonstrou como utilizar essas
-        funções para interagir com o usuário e exibir informações formatadas na
-        tela.
-      </p>
-      <p>
-        <strong>Lembre-se:</strong> A formatação de dados é importante para
-        deixar a saída do programa mais organizada e legível. É importante
-        escolher os especificadores de formato adequados para cada tipo de dado.
-      </p>
+
+      <h3>2.3 Exemplo 3: Soma dos Números</h3>
+      <p>Escreva um programa em C que calcule a soma dos números de 1 a 100.</p>
+      <pre>
+        <code>{`#include <stdio.h>
+
+    int main() {
+        int soma = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            soma += i;
+        }
+
+        printf("A soma dos números de 1 a 100 é: %d\\n", soma);
+
+        return 0;
+    }`}</code>
+      </pre>
+      <ul>
+        <li><strong>Teórico:</strong> Este exemplo demonstra como usar o laço <code>for</code> para calcular a soma dos números de 1 a 100.</li>
+        <li><strong>Prático:</strong> O programa utiliza um laço <code>for</code> para iterar de 1 a 100 e acumular a soma dos números em uma variável <code>soma</code>, que é então impressa no final.</li>
+      </ul>
+
+      <h2>Parte 3: Conclusão</h2>
+
+      <ul>
+        <li>O laço <code>for</code> é uma estrutura de repetição versátil que permite executar um bloco de código um número específico de vezes.</li>
+        <li>Ele é frequentemente utilizado em situações onde é necessário iterar sobre uma sequência de valores conhecida.</li>
+        <li>Com o entendimento do laço <code>for</code>, os programadores têm mais uma ferramenta para criar programas eficientes e precisos em C.</li>
+      </ul>
     </div>
   );
 };
