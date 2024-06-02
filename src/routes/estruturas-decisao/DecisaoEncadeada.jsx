@@ -6,6 +6,15 @@ const DecisaoEncadeada = () => {
       </h2>
       <h3>Por: Pedro Machado</h3>
 
+      <h2>Slides utilizados</h2>
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/jXwXIBr43ro?si=mW5WIG0i6fY3TGSp"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <embed
         src="/public/decisao/DecisaoEncadeada.pdf"
         width="1200"

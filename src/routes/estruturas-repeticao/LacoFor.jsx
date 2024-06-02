@@ -6,6 +6,15 @@ const LacoFor = () => {
       </h2>
       <h3>Por: Pedro Machado</h3>
 
+      <h2>Slides utilizados</h2>
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/DQyYwTsgWTU?si=FW-sxWOqLiSRrMxB"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <embed
         src="/public/repeticao/LacoFor.pdf"
         width="1200"

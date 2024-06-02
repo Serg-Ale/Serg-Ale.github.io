@@ -6,6 +6,15 @@ const LacoDoWhile = () => {
       </h2>
       <h3>Por: Pedro Machado</h3>
 
+      <h2>Slides utilizados</h2>
+      <iframe
+        width="1200"
+        height="700"
+        src="https://www.youtube.com/embed/oDeqQ_X3ykQ?si=P3U1_OJVCiM2qs5o"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <embed
         src="/public/repeticao/LacoDoWhile.pdf"
         width="1200"
