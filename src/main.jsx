@@ -20,6 +20,7 @@ import LacoFor from "./routes/estruturas-repeticao/LacoFor.jsx";
 
 import FuncoesProcedimentos from "./routes/tecnicas-modularizacao/FuncoesProcedimentos.jsx";
 import Recursividade from "./routes/tecnicas-modularizacao/Recursividade.jsx";
+import ReutilizacaoCodigo from "./routes/tecnicas-modularizacao/ReutilizacaoCodigo.jsx";
 
 import IntroVetores from "./routes/var-comp-homogeneas/IntroVetores.jsx";
 import IntroMatrizes from "./routes/var-comp-homogeneas/IntroMatrizes.jsx";
@@ -105,6 +106,10 @@ const router = createBrowserRouter([
           {
             path: "recursividade",
             element: <Recursividade />,
+          },
+          {
+            path: "reutilizacao-codigo",
+            element: <ReutilizacaoCodigo />,
           },
         ]
       },

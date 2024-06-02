@@ -80,6 +80,11 @@ const Nav = () => {
               Introdução a Recursividade
             </Link>
           </li>
+          <li>
+            <Link to="tecnicas-modularizacao/reutilizacao-codigo">
+              Reutilização de Código e Boas Práticas de Programação
+            </Link>
+          </li>
         </ul>
       </nav>
 
