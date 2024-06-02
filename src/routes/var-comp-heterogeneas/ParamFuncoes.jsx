@@ -5,7 +5,6 @@ const ParamFuncoes = () => {
 
       <h3>Por: Mariana de Oliveira</h3>
 
-      <h2>Slides utilizados</h2>
       <iframe width="1200"
         height="700"
         src="https://www.youtube.com/embed/2Upth-a9vps?si=jMHW6Hr10jh43_76"
@@ -15,12 +14,7 @@ const ParamFuncoes = () => {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
       </iframe>
-      <embed
-        src="/public/structs/StructsParams.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
+   
 
       <h3><strong>1. Passagem de Structs por Valor</strong></h3>
       <h4><strong>1.1 Cópia de valores e modificações</strong></h4>

@@ -15,13 +15,6 @@ const EntradaSaida = () => {
         allowfullscreen
       ></iframe>
 
-      <embed
-        src="/public/fundamentos/entrada-saida.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
-
       <h2 id="objetivos">
         <strong>Objetivos:</strong>
       </h2>

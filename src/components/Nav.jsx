@@ -35,15 +35,18 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/estruturas-decisao/decisao-if-else">
-              Estruturas Simples e Compostas</Link>
+              Estruturas Simples e Compostas
+            </Link>
           </li>
           <li>
             <Link to="/estruturas-decisao/decisao-encadeada">
-              Estruturas Encadeadas</Link>
+              Estruturas Encadeadas
+            </Link>
           </li>
           <li>
             <Link to="/estruturas-decisao/decisao-final">
-              Prática e Conlusão sobre as Estruturas</Link>
+              Prática e Conlusão sobre as Estruturas
+            </Link>
           </li>
         </ul>
       </nav>
@@ -53,17 +56,19 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/estruturas-repeticao/laco-while">
-              Laço de Repetição While</Link>
+              Laço de Repetição While
+            </Link>
           </li>
           <li>
             <Link to="/estruturas-repeticao/laco-do-while">
-            Laço de Repetição Do-While</Link>
+              Laço de Repetição Do-While
+            </Link>
           </li>
           <li>
             <Link to="/estruturas-repeticao/laco-for">
-            Laço de Repetição For</Link>
+              Laço de Repetição For
+            </Link>
           </li>
-
         </ul>
       </nav>
 
@@ -141,6 +146,22 @@ const Nav = () => {
           <li>
             <Link to="var-comp-heterogeneas/structs-exercicios">
               Exercícios - Structs
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h3>Códigos-Fonte</h3>
+        <ul>
+          <li>
+            <Link to="https://github.com/Serg-Ale/site-certificadora/tree/main">
+              Código fonte do site
+            </Link>
+          </li>
+          <li>
+            <Link to="https://github.com/Serg-Ale/REA-Fundamentos-De-Programacao">
+              Planejamento
             </Link>
           </li>
         </ul>

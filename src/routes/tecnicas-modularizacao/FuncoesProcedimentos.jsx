@@ -5,13 +5,14 @@ const FuncoesProcedimentos = () => {
         <strong>Aula 1: Introdução a Procedimentos e Funções</strong>
       </h2>
       <h3>Por: Giovana Hoffmann</h3>
-      <iframe width="1200" height="700" src="https://www.youtube.com/embed/odoDclPaL1Y?si=2kKgCUFjCgDb_64y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <embed
-        src="/public/modularizacao/funcoes_procedimentos.pdf"
+      <iframe
         width="1200"
         height="700"
-        type="application/pdf"
-      />
+        src="https://www.youtube.com/embed/odoDclPaL1Y?si=2kKgCUFjCgDb_64y"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
       <h2>Objetivos</h2>
       <ul>
@@ -26,20 +27,24 @@ const FuncoesProcedimentos = () => {
       <h3>1.1 Conceito de Procedimentos e Funções</h3>
       <ul>
         <li>
-          Procedimentos são blocos de código que executam uma série de instruções para realizar uma tarefa específica.
+          Procedimentos são blocos de código que executam uma série de
+          instruções para realizar uma tarefa específica.
         </li>
         <li>
-          Funções são similares aos procedimentos, mas retornam um valor após a execução.
+          Funções são similares aos procedimentos, mas retornam um valor após a
+          execução.
         </li>
       </ul>
 
       <h3>1.2 Benefícios da Modularização</h3>
       <ul>
         <li>
-          Facilita o entendimento e manutenção do código, dividindo-o em partes menores e mais compreensíveis.
+          Facilita o entendimento e manutenção do código, dividindo-o em partes
+          menores e mais compreensíveis.
         </li>
         <li>
-          Promove a reutilização de código, evitando repetição e tornando o desenvolvimento mais eficiente e organizado.
+          Promove a reutilização de código, evitando repetição e tornando o
+          desenvolvimento mais eficiente e organizado.
         </li>
       </ul>
 
@@ -48,20 +53,28 @@ const FuncoesProcedimentos = () => {
       <h3>2.1 Conceito de Parâmetros</h3>
       <ul>
         <li>
-          Parâmetros são utilizados para passar informações para procedimentos e funções.
+          Parâmetros são utilizados para passar informações para procedimentos e
+          funções.
         </li>
         <li>
-          Permitem que dados sejam recebidos e utilizados dentro do bloco de código.
+          Permitem que dados sejam recebidos e utilizados dentro do bloco de
+          código.
         </li>
       </ul>
 
       <h3>2.2 Passagem de Parâmetros</h3>
       <ul>
         <li>
-          <strong>Passagem por Valor:</strong> Uma cópia do valor do parâmetro é passada para o procedimento ou função. Alterações no parâmetro dentro do bloco de código não afetam o valor original fora dele.
+          <strong>Passagem por Valor:</strong> Uma cópia do valor do parâmetro é
+          passada para o procedimento ou função. Alterações no parâmetro dentro
+          do bloco de código não afetam o valor original fora dele.
         </li>
         <li>
-          <strong>Passagem por Referência:</strong> O endereço de memória do parâmetro é passado para o procedimento ou função. Isso permite que o procedimento ou função acesse e modifique diretamente o valor original do parâmetro. Qualquer alteração feita no parâmetro dentro do bloco de código afetará o valor original fora do procedimento ou função.
+          <strong>Passagem por Referência:</strong> O endereço de memória do
+          parâmetro é passado para o procedimento ou função. Isso permite que o
+          procedimento ou função acesse e modifique diretamente o valor original
+          do parâmetro. Qualquer alteração feita no parâmetro dentro do bloco de
+          código afetará o valor original fora do procedimento ou função.
         </li>
       </ul>
 
@@ -69,7 +82,8 @@ const FuncoesProcedimentos = () => {
 
       <ul>
         <li>
-          Funções podem retornar valores após a execução, permitindo que resultados sejam usados onde a função foi chamada.
+          Funções podem retornar valores após a execução, permitindo que
+          resultados sejam usados onde a função foi chamada.
         </li>
         <li>
           O valor de retorno pode ser de qualquer tipo de dado necessário.
@@ -149,10 +163,11 @@ const FuncoesProcedimentos = () => {
         </code>
       </pre>
 
-
-
       <h3>5.4 Outro Exemplo</h3>
-      <p>Neste exemplo, temos uma função que calcula o quadrado de um número fornecido pelo usuário.</p>
+      <p>
+        Neste exemplo, temos uma função que calcula o quadrado de um número
+        fornecido pelo usuário.
+      </p>
       <pre>
         <code>
           {`

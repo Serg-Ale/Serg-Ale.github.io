@@ -8,7 +8,6 @@ const ConceitosBasicos = () => {
       </h2>
       <h3>Por: Sérgio Alexandre</h3>
 
-      <h2>Slides utilizados</h2>
       <iframe
         width="1200"
         height="700"
@@ -17,12 +16,6 @@ const ConceitosBasicos = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <embed
-        src="/public/fundamentos/introducao.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
 
       <h2>Objetivos</h2>
       <ul>

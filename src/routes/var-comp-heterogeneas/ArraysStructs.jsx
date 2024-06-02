@@ -7,7 +7,6 @@ const ArraysStructs = () => {
 
       <h3>Por: Mariana de Oliveira</h3>
 
-      <h2>Slides utilizados</h2>
       <iframe
         width="1200"
         height="700"
@@ -16,12 +15,7 @@ const ArraysStructs = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <embed
-        src="/public/structs/ArraysStructs.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
+    
 
       <h3>
         <strong>1. Declaração de Arrays de Structs</strong>

@@ -14,13 +14,6 @@ const Expressoes = () => {
         allowfullscreen
       ></iframe>
 
-      <embed
-        src="/public/fundamentos/expressoes.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
-
       <h2 id="objetivos">
         <strong>Objetivos:</strong>
       </h2>

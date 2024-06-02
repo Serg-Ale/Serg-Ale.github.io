@@ -5,7 +5,6 @@ const IntroStructs = () => {
 
       <h3>Por: Mariana de Oliveira</h3>
 
-      <h2>Slides utilizados</h2>
       <iframe width="1200"
         height="700"
         src="https://www.youtube.com/embed/CCgVBGzbCTs?si=-a85yHfA7z8Dn9n8"
@@ -14,12 +13,7 @@ const IntroStructs = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
-      <embed
-        src="/public/structs/IntroStructs.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
+    
 
       <h3><strong>1. Introdução</strong></h3>
       <h4><strong>1.1 O que são structs e suas vantagens?</strong></h4>

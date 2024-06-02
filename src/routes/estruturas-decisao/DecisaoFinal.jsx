@@ -13,12 +13,7 @@ const DecisaoFinal = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <embed
-        src="/public/decisao/DecisaoFinal.pdf"
-        width="1200"
-        height="700"
-        type="application/pdf"
-      />
+   
 
       <h2>Objetivos</h2>
       <ul>

@@ -14,12 +14,6 @@ const variaveis = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <embed
-          src="/public/fundamentos/variaveis.pdf"
-          width="1200"
-          height="700"
-          type="application/pdf"
-        />
 
         <h2 id="objetivos">
           <strong>Objetivos:</strong>
